@@ -6,11 +6,11 @@
 <?php
 get_header(); ?>
 
-<div id="page-wrapper" class="wrapper"> 
+<div id="page-wrapper" class="wrapper portfolio-body"> 
     <div class="container" id="content" tabindex="-1"> 
         <div class="row pg-empty-placeholder">
             <div class="col-md-12">
-                <h3><?php the_title(); ?></h3> 
+                <h3 class="text-center"><?php the_title(); ?></h3> 
                 <?php the_excerpt( ); ?> 
             </div>
         </div>
