@@ -2,17 +2,6 @@
     box-shadow: -5px -5px 6px #cfcbcb;
 }
 
-.portfolio-grid div.card:hover {
-    color: #ffecec;
-    font-family: Roboto;
-    font-weight: bold;
-    transition: color 700ms ease-out  , background 1s;
-    background-color: #A32B02;
-    transform: translate(-4px, -3px);
-    text-shadow: 0px 1px 4px;
-    box-shadow: 3px 5px 13px #403f3f;
-}
-
 html,
 body {
 }
@@ -82,5 +71,14 @@ p {
 }
 
 .nav-item {
-    font-size: 1.2em;
+    font-size: 1em;
+    font-family: Roboto;
+}
+
+div#card-inner:hover {
+    background-color: #a32b02;
+    color: #f6e4e4;
+    box-shadow: 4px 4px 8px #403838;
+    transform: translate(-3px, -3px);
+    transition: color 1s ease  , all 500ms ease-in;
 }
