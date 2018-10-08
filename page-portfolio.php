@@ -26,15 +26,15 @@ get_header(); ?>
                 <?php $portfolio_item_number = 0; ?>
                 <?php while ( $portfolio->have_posts() && $portfolio_item_number++ < 1 ) : $portfolio->the_post(); ?>
                     <div class="card " style="grid-area:one;">
-                        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
+                        <div class="modal fade pg-show-modal" id="modal1" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
                             <div class="modal-dialog modal-lg"> 
                                 <div class="modal-content"> 
                                     <div class="modal-header"> 
                                         <h4 class="modal-title"><?php the_title(); ?></h4> 
                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                                                         
                                     </div>                                                     
-                                    <div class="modal-body"> 
-                                        <?php the_content(); ?> 
+                                    <div class="modal-body">
+                                        <?php the_content(); ?>
                                     </div>                                                     
                                     <div class="modal-footer"> 
                                         <button type="button" class="btn btn-default" data-dismiss="modal" id="1">

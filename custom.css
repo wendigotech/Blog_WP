@@ -77,3 +77,7 @@ div#card-inner:hover {
     transform: translate(-3px, -3px);
     transition: color 1s ease  , all 500ms ease-in;
 }
+
+.modal-body img:hover {
+    transform: scale(2);
+}
