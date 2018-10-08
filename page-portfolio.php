@@ -10,7 +10,7 @@ get_header(); ?>
     <div class="container" id="content" tabindex="-1"> 
         <div class="row">
             <div class="col-md-12">
-                <h3 class="text-center"><?php the_title(); ?></h3> 
+                <h2 class="text-center"><?php the_title(); ?></h2> 
                 <?php the_content(); ?> 
             </div>
         </div>
@@ -25,7 +25,7 @@ get_header(); ?>
             <?php if ( $portfolio->have_posts() ) : ?>
                 <?php $portfolio_item_number = 0; ?>
                 <?php while ( $portfolio->have_posts() && $portfolio_item_number++ < 1 ) : $portfolio->the_post(); ?>
-                    <div class="card " style="grid-area:one;">
+                    <div class="card " style="grid-area:one;" id="one">
                         <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
                             <div class="modal-dialog modal-lg"> 
                                 <div class="modal-content"> 
@@ -68,7 +68,7 @@ get_header(); ?>
                 <?php $portfolio_item_number = 0; ?>
                 <?php while ( $portfolio->have_posts() && $portfolio_item_number++ < 1 ) : $portfolio->the_post(); ?>
                     <div class="card " style="grid-area:two;">
-                        <div class="modal fade pg-show-modal" id="modal2" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
+                        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
                             <div class="modal-dialog modal-lg"> 
                                 <div class="modal-content"> 
                                     <div class="modal-header"> 
@@ -110,7 +110,7 @@ get_header(); ?>
                 <?php $portfolio_item_number = 0; ?>
                 <?php while ( $portfolio->have_posts() && $portfolio_item_number++ < 1 ) : $portfolio->the_post(); ?>
                     <div class="card " style="grid-area:three;">
-                        <div class="modal fade pg-show-modal" id="modal3" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
+                        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
                             <div class="modal-dialog modal-lg"> 
                                 <div class="modal-content"> 
                                     <div class="modal-header"> 
@@ -157,7 +157,7 @@ get_header(); ?>
             <?php if ( $portfolio->have_posts() ) : ?>
                 <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
                     <div class="card " style="grid-area:six;">
-                        <div class="modal fade pg-show-modal" id="modal4" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
+                        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
                             <div class="modal-dialog modal-lg"> 
                                 <div class="modal-content"> 
                                     <div class="modal-header"> 
@@ -199,7 +199,7 @@ get_header(); ?>
                 <?php $portfolio_item_number = 0; ?>
                 <?php while ( $portfolio->have_posts() && $portfolio_item_number++ < 1 ) : $portfolio->the_post(); ?>
                     <div class="card " style="grid-area:four;">
-                        <div class="modal fade pg-show-modal" id="modal5" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
+                        <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
                             <div class="modal-dialog modal-lg"> 
                                 <div class="modal-content"> 
                                     <div class="modal-header"> 
@@ -241,7 +241,7 @@ get_header(); ?>
                 <?php $portfolio_item_number = 0; ?>
                 <?php while ( $portfolio->have_posts() && $portfolio_item_number++ < 1 ) : $portfolio->the_post(); ?>
                     <div class="card " style="grid-area:five;">
-                        <div class="modal fade pg-show-modal" id="modal6" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
+                        <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
                             <div class="modal-dialog modal-lg"> 
                                 <div class="modal-content"> 
                                     <div class="modal-header"> 
