@@ -55,7 +55,7 @@ get_header(); ?>
                             <div class="card-body">
                                 <h4 class="card-title"><?php the_title(); ?></h4>
                                 <?php the_excerpt( ); ?>
-                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark"><?php _e( 'Go somewhere', 'blog' ); ?></a>
+                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark" id="1"><?php _e( 'Go somewhere', 'blog' ); ?></a>
                             </div>
                         </div>
                     </div>
