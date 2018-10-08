@@ -149,6 +149,16 @@ function st2_widgets_init() {
         'after_title' => '</h3>'
     ) );
 
+    register_sidebar( array(
+        'name' => __( 'Bottom Bottom', 'blog' ),
+        'id' => 'footerbottom',
+        'description' => 'Full bottom widget with dynamic grid',
+        'before_widget' => '<div id="%1$s" class="footer-widget %2$s '. st2_slbd_count_widgets( 'footerfull' ) .'">',
+        'after_widget' => '</div><!-- .footer-widget -->',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    ) );
+
     /* Pinegrow generated Register Sidebars End */
 }
 add_action( 'widgets_init', 'st2_widgets_init' );
