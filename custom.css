@@ -82,3 +82,10 @@ div#card-inner:hover {
     transform: scale(2);
     transition: all 500ms ease-in-out;
 }
+
+.card-img-top {
+    width: 100%; /* Required because we use flexbox and this inherently applies align-self: stretch*/
+    background-size: cover;
+    pg-file: "cs-source-11-16-55";
+    pg-id: 23;
+}
