@@ -80,4 +80,5 @@ div#card-inner:hover {
 
 .modal-body img:hover {
     transform: scale(2);
+    transition: all 500ms ease-in-out;
 }
