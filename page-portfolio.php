@@ -8,8 +8,14 @@ get_header(); ?>
 
 <div id="page-wrapper" class="wrapper"> 
     <div class="container" id="content" tabindex="-1"> 
+        <div class="row pg-empty-placeholder">
+            <div class="col-md-12">
+                <h3><?php the_title(); ?></h3> 
+                <?php the_excerpt( ); ?> 
+            </div>
+        </div>
         <?php if ( have_posts() ) : ?>
-            <div <?php post_class( 'row portfolio-grid' ); ?> id="post-<?php the_ID(); ?>">
+            <div class="row portfolio-grid">
                 <?php while ( have_posts() ) : the_post(); ?>
                     <div class="card " style="grid-area:one;">
                         <?php if ( is_singular() ) : ?>
@@ -32,6 +38,14 @@ get_header(); ?>
                         </div>
                     </div>
                 <?php endwhile; ?>
+                <div class="card " style="grid-area:two;">
+                    <img class="card-img-top" alt="Card image cap" src="http://pinegrow.com/placeholders/img19.jpg"/>
+                    <div class="card-body">
+                        <h4 class="card-title"><?php _e( 'Card title', 'blog' ); ?></h4>
+                        <p class="card-text"><?php _e( 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 'blog' ); ?></p>
+                        <a href="#" class="btn btn-primary"><?php _e( 'Go somewhere', 'blog' ); ?></a>
+                    </div>
+                </div>
                 <div class="card " style="grid-area:three;">
                     <img class="card-img-top" alt="Card image cap" src="http://pinegrow.com/placeholders/img19.jpg"/>
                     <div class="card-body">
