@@ -47,7 +47,7 @@ get_header(); ?>
                         <div id="card-inner">
                             <?php
                                 if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail( 'thumbnail', array(
+                                    the_post_thumbnail( 'normal', array(
                                     'class' => 'card-img-top'
                                 ) );
                                 }
