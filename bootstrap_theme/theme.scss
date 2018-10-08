@@ -1,0 +1,32 @@
+// Your Custom Theme & WordPress related CSS rules should come here //
+// Edit bootstrap_theme>custom.scss to add/modify custom rules which are "bootstrap related" //
+
+img.wp-post-image,
+article img,
+figure,
+#secondary img {
+margin-bottom: 10px;
+}
+
+.wp-caption-text {
+margin-bottom: 10px;
+}
+
+.widget-area aside {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+#page {
+    word-wrap: break-word;
+}
+
