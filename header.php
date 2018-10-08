@@ -17,7 +17,7 @@
             <header> 
                 <div itemscope="" itemtype="http://schema.org/WebSite" id="wrapper-navbar"> 
                     <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'blog' ); ?></a> 
-                    <nav class="navbar bg-primary navbar-dark navbar-expand-lg"> 
+                    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top"> 
                         <div class="container"> 
                             <?php if ( ! has_custom_logo() ) : ?>
                                 <div> 

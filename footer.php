@@ -11,7 +11,7 @@
                     </div>                     
                 </div>
             <?php endif; ?> 
-            <div class="wrapper" id="wrapper-footer"> 
+            <div class="wrapper bg-dark text-light" id="wrapper-footer"> 
                 <div class="container"> 
                     <div class="row"> 
                         <div class="col-md-12"> 
