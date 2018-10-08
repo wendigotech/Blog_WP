@@ -15,7 +15,7 @@
 
 html,
 body {
-    font-size: 10px;
+    font-size: 13px;
 }
 
 h1 {
@@ -86,7 +86,4 @@ p {
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0em;
-}
-
-@media screen and (max-width: 720px) {
 }
