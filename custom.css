@@ -2,14 +2,10 @@
     box-shadow: -5px -5px 6px #cfcbcb;
 }
 
-html,
-body {
-}
-
 h1 {
     font-family: Roboto Slab;
     font-size: 3.814697265625em;
-    line-height: 6rem;
+    line-height: 3rem;
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0em;
@@ -61,7 +57,6 @@ h6 {
 }
 
 p {
-    margin-bottom: 1rem;
     font-family: Roboto;
     font-size: 1.2em;
     line-height: 2rem;

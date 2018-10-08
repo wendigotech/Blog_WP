@@ -25,7 +25,7 @@ get_header(); ?>
             <?php if ( $portfolio->have_posts() ) : ?>
                 <?php $portfolio_item_number = 0; ?>
                 <?php while ( $portfolio->have_posts() && $portfolio_item_number++ < 1 ) : $portfolio->the_post(); ?>
-                    <div class="card " style="grid-area:one;" id="one">
+                    <div class="card " style="grid-area:one;">
                         <div class="modal fade pg-show-modal" id="modal1" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
                             <div class="modal-dialog modal-lg"> 
                                 <div class="modal-content"> 
@@ -37,7 +37,7 @@ get_header(); ?>
                                         <?php the_content(); ?> 
                                     </div>                                                     
                                     <div class="modal-footer"> 
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal" id="1" data-toggle="modal" data-target="#modal1">
                                             <?php _e( 'Close', 'blog' ); ?>
                                         </button>                                                         
                                     </div>                                                     
@@ -55,7 +55,7 @@ get_header(); ?>
                             <div class="card-body">
                                 <h4 class="card-title"><?php the_title(); ?></h4>
                                 <?php the_excerpt( ); ?>
-                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark" data-toggle="modal" data-target="#modal1"><?php _e( 'Go somewhere', 'blog' ); ?></a>
+                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark"><?php _e( 'Go somewhere', 'blog' ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@ get_header(); ?>
                             <div class="card-body">
                                 <h4 class="card-title"><?php the_title(); ?></h4>
                                 <?php the_excerpt( ); ?>
-                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark" data-toggle="modal" data-target="#modal1"><?php _e( 'Go somewhere', 'blog' ); ?></a>
+                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark" id="2" data-toggle="modal" data-target="#modal2"><?php _e( 'Go somewhere', 'blog' ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@ get_header(); ?>
                             <div class="card-body">
                                 <h4 class="card-title"><?php the_title(); ?></h4>
                                 <?php the_excerpt( ); ?>
-                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark" data-toggle="modal" data-target="#modal1"><?php _e( 'Go somewhere', 'blog' ); ?></a>
+                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark" id="3" data-toggle="modal" data-target="#modal3"><?php _e( 'Go somewhere', 'blog' ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -186,7 +186,7 @@ get_header(); ?>
                             <div class="card-body">
                                 <h4 class="card-title"><?php the_title(); ?></h4>
                                 <?php the_excerpt( ); ?>
-                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark" data-toggle="modal" data-target="#modal1"><?php _e( 'Go somewhere', 'blog' ); ?></a>
+                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark" id="4" data-toggle="modal" data-target="#modal4"><?php _e( 'Go somewhere', 'blog' ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -228,7 +228,7 @@ get_header(); ?>
                             <div class="card-body">
                                 <h4 class="card-title"><?php the_title(); ?></h4>
                                 <?php the_excerpt( ); ?>
-                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark" data-toggle="modal" data-target="#modal1"><?php _e( 'Go somewhere', 'blog' ); ?></a>
+                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark" id="5" data-toggle="modal" data-target="#modal5"><?php _e( 'Go somewhere', 'blog' ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -270,7 +270,7 @@ get_header(); ?>
                             <div class="card-body">
                                 <h4 class="card-title"><?php the_title(); ?></h4>
                                 <?php the_excerpt( ); ?>
-                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark" data-toggle="modal" data-target="#modal1"><?php _e( 'Go somewhere', 'blog' ); ?></a>
+                                <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-dark" id="6" data-toggle="modal" data-target="#modal6"><?php _e( 'Go somewhere', 'blog' ); ?></a>
                             </div>
                         </div>
                     </div>
