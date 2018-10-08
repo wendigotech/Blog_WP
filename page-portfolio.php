@@ -26,7 +26,7 @@ get_header(); ?>
                 <?php $portfolio_item_number = 0; ?>
                 <?php while ( $portfolio->have_posts() && $portfolio_item_number++ < 1 ) : $portfolio->the_post(); ?>
                     <div class="card " style="grid-area:one;">
-                        <div class="modal fade pg-show-modal" id="modal1" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
+                        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
                             <div class="modal-dialog modal-lg"> 
                                 <div class="modal-content"> 
                                     <div class="modal-header"> 
@@ -47,7 +47,7 @@ get_header(); ?>
                         <div id="card-inner">
                             <?php
                                 if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail( 'normal', array(
+                                    the_post_thumbnail( 'thumbnail', array(
                                     'class' => 'card-img-top'
                                 ) );
                                 }
