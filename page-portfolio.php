@@ -14,9 +14,16 @@ get_header(); ?>
                 <?php the_excerpt( ); ?> 
             </div>
         </div>
-        <?php if ( have_posts() ) : ?>
+        <?php
+            $portfolio_args = array(
+                'category_name' => 'portfolio',
+                'order' => 'ASC'
+            )
+        ?>
+        <?php $portfolio = new WP_Query( $portfolio_args ); ?>
+        <?php if ( $portfolio->have_posts() ) : ?>
             <div class="row portfolio-grid">
-                <?php while ( have_posts() ) : the_post(); ?>
+                <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
                     <div class="card " style="grid-area:one;">
                         <?php if ( is_singular() ) : ?>
                             <?php
@@ -37,15 +44,16 @@ get_header(); ?>
                             <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-primary"><?php _e( 'Go somewhere', 'blog' ); ?></a>
                         </div>
                     </div>
-                <?php endwhile; ?>
-                <div class="card " style="grid-area:two;">
-                    <img class="card-img-top" alt="Card image cap" src="http://pinegrow.com/placeholders/img19.jpg"/>
-                    <div class="card-body">
-                        <h4 class="card-title"><?php _e( 'Card title', 'blog' ); ?></h4>
-                        <p class="card-text"><?php _e( 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 'blog' ); ?></p>
-                        <a href="#" class="btn btn-primary"><?php _e( 'Go somewhere', 'blog' ); ?></a>
+                    <div class="card " style="grid-area:two;">
+                        <img class="card-img-top" alt="Card image cap" src="http://pinegrow.com/placeholders/img19.jpg"/>
+                        <div class="card-body">
+                            <h4 class="card-title"><?php _e( 'Card title', 'blog' ); ?></h4>
+                            <p class="card-text"><?php _e( 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 'blog' ); ?></p>
+                            <a href="#" class="btn btn-primary"><?php _e( 'Go somewhere', 'blog' ); ?></a>
+                        </div>
                     </div>
-                </div>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
                 <div class="card " style="grid-area:three;">
                     <img class="card-img-top" alt="Card image cap" src="http://pinegrow.com/placeholders/img19.jpg"/>
                     <div class="card-body">
