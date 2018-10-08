@@ -68,20 +68,6 @@ get_header(); ?>
                             <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-primary" data-toggle="modal" data-target="#modal1"><?php _e( 'Go somewhere', 'blog' ); ?></a>
                         </div>
                     </div>
-                    <div class="card " style="grid-area:two;" id="2">
-                        <?php
-                            if ( has_post_thumbnail() ) {
-                                the_post_thumbnail( 'normal', array(
-                                'class' => 'card-img-top'
-                            ) );
-                            }
-                         ?>
-                        <div class="card-body">
-                            <h4 class="card-title"><?php the_title(); ?></h4>
-                            <p class="card-text"><?php _e( 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 'blog' ); ?></p>
-                            <a href="#" class="btn btn-primary"><?php _e( 'Go somewhere', 'blog' ); ?></a>
-                        </div>
-                    </div>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
                 <div class="card " style="grid-area:three;">
