@@ -5,7 +5,7 @@
 h1 {
     font-family: Roboto Slab;
     font-size: 2.814697265625em;
-    line-height: 3rem;
+    line-height: 2rem;
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0em;
@@ -14,16 +14,15 @@ h1 {
 h2 {
     font-family: Roboto Slab;
     font-size: 2em;
-    line-height: 6rem;
+    line-height: 2rem;
     font-weight: 700;
     font-style: normal;
-    letter-spacing: 0em;
 }
 
 h3 {
     font-family: Roboto Slab;
     font-size: 1.44140625em;
-    line-height: 3rem;
+    line-height: 2rem;
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0em;
@@ -32,7 +31,7 @@ h3 {
 h4 {
     font-family: Roboto Slab;
     font-size: 1.253125em;
-    line-height: 3rem;
+    line-height: 1rem;
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0em;
@@ -41,7 +40,7 @@ h4 {
 h5 {
     font-family: Roboto Slab;
     font-size: 1.1em;
-    line-height: 3rem;
+    line-height: 2rem;
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0em;
@@ -50,7 +49,7 @@ h5 {
 h6 {
     font-family: Roboto Slab;
     font-size: 1em;
-    line-height: 3rem;
+    line-height: 2rem;
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0em;
@@ -59,10 +58,8 @@ h6 {
 p {
     font-family: Roboto;
     font-size: 1.1em;
-    line-height: 2rem;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 0em;
 }
 
 .nav-item {
@@ -71,7 +68,7 @@ p {
 }
 
 div#card-inner:hover {
-    background-color: #a32b02;
+    background-color: #961313;
     color: #f6e4e4;
     box-shadow: 4px 4px 8px #403838;
     transform: translate(-3px, -3px);
