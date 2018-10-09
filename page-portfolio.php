@@ -148,14 +148,9 @@ get_header(); ?>
             <?php else : ?>
                 <p><?php _e( 'Sorry, no posts matched your criteria.', 'blog' ); ?></p>
             <?php endif; ?>
-            <?php
-                $portfolio_args = array(
-                    'category_name' => 'portfolio'
-                )
-            ?>
-            <?php $portfolio = new WP_Query( $portfolio_args ); ?>
             <?php if ( $portfolio->have_posts() ) : ?>
-                <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
+                <?php $portfolio_item_number = 0; ?>
+                <?php while ( $portfolio->have_posts() && $portfolio_item_number++ < 1 ) : $portfolio->the_post(); ?>
                     <div class="card " style="grid-area:six;">
                         <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
                             <div class="modal-dialog modal-lg"> 
