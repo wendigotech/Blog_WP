@@ -14,7 +14,7 @@
             <div class="wrapper bg-dark text-light" id="wrapper-footer"> 
                 <div class="container"> 
                     <div class="row"> 
-                        <div class="col-md-8"> 
+                        <div class="col-md-6"> 
                             <footer class="site-footer" id="colophon"> 
                                 <div class="site-info"> 
                                     <p><?php echo get_theme_mod( 'footer_text', 'Proudly powered by WordPress | Theme: Starter Theme 2 by Pinegrow 2018. (Version: 0.0.0)' ); ?></p> 

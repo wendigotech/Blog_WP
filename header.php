@@ -48,7 +48,7 @@
                     <div> 
                         <div class="jumbotron" style="background-color:<?php echo get_theme_mod( 'jumbotron_bg_color' ); ?>;background-image:<?php echo 'url('.wp_get_attachment_image_url( get_theme_mod( 'jumbotron_bg_image' ), 'full' ).')' ?>;"> 
                             <div class="container"> 
-                                <h1 class="display-3" style="color:<?php echo get_theme_mod( 'jumbotron_heading_color' ); ?> !important;"><?php _e( 'Starter Theme', 'blog' ); ?> <b><?php _e( '2', 'blog' ); ?></b></h1> 
+                                <h1 style="color:<?php echo get_theme_mod( 'jumbotron_heading_color' ); ?> !important;"><?php _e( 'Starter Theme', 'blog' ); ?> <b><?php _e( '2', 'blog' ); ?></b></h1> 
                                 <p class="lead" style="color:<?php echo get_theme_mod( 'jumbotron_text_color' ); ?>;"><?php _e( 'Powered by Bootstrap 4 and SASS.', 'blog' ); ?></p> 
                             </div>                             
                         </div>                         
