@@ -71,7 +71,6 @@ p {
 }
 
 div#card-inner:hover {
-    background-color: #961313;
     color: #f6e4e4;
     box-shadow: 4px 4px 8px #403838;
     border-radius: 10px;

@@ -25,8 +25,8 @@ get_header(); ?>
                             <?php if ( $portfolio->have_posts() ) : ?>
                                 <?php $portfolio_item_number = 0; ?>
                                 <?php while ( $portfolio->have_posts() && $portfolio_item_number++ < 1 ) : $portfolio->the_post(); ?>
-                                    <div class="card justify-content-center flex-wrap-reverse mh-100 clearfix col-lg-12 tracking-in-expand" style="grid-area:1 / 1 / 3 / 3;">
-                                        <div id="card-inner">
+                                    <div class="card justify-content-center flex-wrap-reverse mh-100 clearfix col-lg-12" style="grid-area:1 / 1 / 3 / 3;">
+                                        <div id="card-inner" class="tracking-in-expand">
                                             <div class="row">
                                                 <div class="col-md-10">                                                      
 
@@ -43,7 +43,7 @@ get_header(); ?>
                                                 </div>
                                                 <div class="card-body ">
                                                     <?php the_excerpt( ); ?>
-                                                    <a class="btn btn-dark d-inline-flex align-content-center heartbeat float-right mt-5" id="1" data-toggle="modal" data-target="#modal1" href="#"><?php _e( 'Read more', 'blog' ); ?></a>
+                                                    <a class="btn btn-dark heartbeat mt-5" id="1" data-toggle="modal" data-target="#modal1" href="#"><?php _e( 'Read more', 'blog' ); ?></a>
                                                 </div>
                                             </div>
                                         </div>
