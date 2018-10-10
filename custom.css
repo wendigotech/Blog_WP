@@ -4,67 +4,6 @@
     box-shadow: 2px 2px 10px #fffdfd;
 }
 
-h1 {
-    font-family: Roboto Slab;
-    font-size: 2.814697265625em;
-    line-height: 2rem;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: 0em;
-}
-
-h2 {
-    font-family: Roboto Slab;
-    font-size: 2em;
-    line-height: 2rem;
-    font-weight: 700;
-    font-style: normal;
-}
-
-h3 {
-    font-family: Roboto Slab;
-    font-size: 1.44140625em;
-    line-height: 2rem;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: 0em;
-}
-
-h4 {
-    font-family: Roboto Slab;
-    font-size: 1.253125em;
-    line-height: 1rem;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: 0em;
-}
-
-h5 {
-    font-family: Roboto Slab;
-    font-size: 1.1em;
-    line-height: 2rem;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: 0em;
-}
-
-h6 {
-    font-family: Roboto Slab;
-    font-size: 1em;
-    line-height: 2rem;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: 0em;
-}
-
-p {
-    font-family: Roboto;
-    font-size: 1.1em;
-    font-weight: 800;
-    font-style: normal;
-    font-variant: small-caps;
-}
-
 .nav-item {
     font-size: 1em;
     font-family: Roboto;
@@ -677,4 +616,65 @@ div.card-body .btn {
     /* See also https://github.com/twbs/bootstrap/issues/17695*/
     pg-file: "cs-source-29-16-65";
     pg-id: 3;
+}
+
+h1 {
+    font-family: Roboto Slab;
+    font-size: 2.814697265625em;
+    line-height: 2rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0em;
+}
+
+h2 {
+    font-family: Roboto Slab;
+    font-size: 2em;
+    line-height: 2rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3 {
+    font-family: Roboto Slab;
+    font-size: 1.44140625em;
+    line-height: 2rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0em;
+}
+
+h4 {
+    font-family: Roboto Slab;
+    font-size: 1.253125em;
+    line-height: 1rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0em;
+}
+
+h5 {
+    font-family: Roboto Slab;
+    font-size: 1.1em;
+    line-height: 2rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0em;
+}
+
+h6 {
+    font-family: Roboto Slab;
+    font-size: 1em;
+    line-height: 2rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0em;
+}
+
+p {
+    font-family: Roboto;
+    font-size: 1.1em;
+    font-weight: 800;
+    font-style: normal;
+    font-variant: small-caps;
 }
