@@ -1,5 +1,5 @@
 .portfolio-grid div.card {
-    background: linear-gradient(90deg, #ECE9E6, #FFFFFF);
+    background: linear-gradient(90deg, #cc2b5e, #753a88);
     border-radius: 10px;
     box-shadow: 2px 2px 10px #fffdfd;
 }
@@ -13,7 +13,8 @@ div#card-inner:hover {
     color: #f6e4e4;
     box-shadow: 4px 4px 8px #403838;
     border-radius: 10px;
-    background-image: linear-gradient(90deg, #AA076B, #61045F);
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    transition: background 2s cubic-bezier(0.25, 0.10, 0.25, 1.00);
 }
 
 .modal-body img:hover {
@@ -355,11 +356,11 @@ div.card-body .btn {
  */
 @-webkit-keyframes color-change-2x {
     0% {
-        background: #19dcea;
+        background: #2193b0;
     }
 
     100% {
-        background: #b22cff;
+        background: #6dd5ed;
     }
 }
 

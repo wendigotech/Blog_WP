@@ -108,9 +108,11 @@ get_header(); ?>
                                             <div class="card-body">
                                                 <h4 class="card-title"><?php the_title(); ?></h4>
                                                 <?php the_excerpt( ); ?>
-                                                <a href="#" class="btn btn-dark" id="2" data-toggle="modal" data-target="#modal2"><?php _e( 'Go somewhere', 'blog' ); ?></a>
                                             </div>
                                         </div>
+                                        <button class="btn btn-dark btn-lg" id="2" data-toggle="modal" data-target="#modal2" type="button">
+                                            <?php _e( 'Go somewhere', 'blog' ); ?>
+                                        </button>
                                     </div>
                                 <?php endwhile; ?>
                                 <?php wp_reset_postdata(); ?>
