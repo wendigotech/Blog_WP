@@ -28,8 +28,7 @@ get_header(); ?>
                                     <div class="card justify-content-center flex-wrap-reverse mh-100 clearfix col-lg-12" style="grid-area:1 / 1 / 3 / 3;">
                                         <div id="card-inner" class="tracking-in-expand">
                                             <div class="row">
-                                                <div class="col-md-10">                                                      
-
+                                                <div class="col-md-10"> 
                                                     <?php
                                                         if ( has_post_thumbnail() ) {
                                                             the_post_thumbnail( 'large', array(
@@ -39,7 +38,7 @@ get_header(); ?>
                                                      ?>
                                                 </div>
                                                 <div class="col-md-2 d-inline-flex align-items-end justify-content-end flex-column">
-                                                    <h4 class="card-title font-weight-bold"><?php the_title(); ?></h4>                                                      
+                                                    <h4 class="card-title font-weight-bold"><?php the_title(); ?></h4> 
                                                 </div>
                                                 <div class="card-body ">
                                                     <?php the_excerpt( ); ?>
@@ -48,7 +47,7 @@ get_header(); ?>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-12">                                                  
+                                            <div class="col-md-12"> 
 </div>
                                         </div>
                                         <div class="modal" id="modal1" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 

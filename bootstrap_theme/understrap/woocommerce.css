@@ -1,0 +1,9 @@
+.woocommerce-input-wrapper {
+  width: 100%; }
+
+.stripe-card-group,
+.woocommerce-account .StripeElement,
+.woocommerce-checkout .StripeElement {
+  width: 100%; }
+
+/*# sourceMappingURL=woocommerce.css.map */

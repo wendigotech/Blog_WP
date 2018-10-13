@@ -23,7 +23,8 @@ div#card-inner:hover {
 .card-img-top {
     width: 100%; /* Required because we use flexbox and this inherently applies align-self: stretch*/
     height: auto;
-    border-radius: 16px;
+    max-width: 350px;
+    max-height: 400px;
     pg-file: "cs-source-11-16-55";
     pg-id: 23;
 }
