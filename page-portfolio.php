@@ -63,10 +63,14 @@ get_header(); ?>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
                 <figure class="snip1543" style="grid-area:1 / 2 / 3 / 3;">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample101.jpg" alt="sample101"/>
+                    <?php
+                        if ( has_post_thumbnail() ) {
+                            the_post_thumbnail( 'normal' );
+                        }
+                     ?>
                     <figcaption>
-                        <h3><?php _e( 'Indigo Violet', 'blog' ); ?></h3>
-                        <p><?php _e( 'But Calvin is no kind and loving god! He\'s one of the old gods! He demands sacrifice!', 'blog' ); ?> </p>
+                        <h3><?php the_title(); ?></h3>
+                        <?php the_excerpt( ); ?>
                     </figcaption>
                     <a href="#"></a>
                 </figure>
