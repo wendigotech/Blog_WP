@@ -1,23 +1,19 @@
 .cards {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     display: -webkit-flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     -webkit-justify-content: center;
 }
 
 .card--1 .card__img,
 .card--1 .card__img--hover {
-    background-image: url("https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
 
 .card--2 .card__img,
 .card--2 .card__img--hover {
-    background-image: url("https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
 
 .card__like {
@@ -61,8 +57,6 @@
 }
 
 .card__img--hover {
-    -webkit-transition: 0.2s all ease-out;
-    -o-transition: 0.2s all ease-out;
     transition: 0.2s all ease-out;
     background-size: cover;
     background-position: center;
@@ -77,24 +71,18 @@
 
 .card {
     margin-right: 25px;
-    -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
-    -o-transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
     background-color: #fff;
     width: 33.3%;
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    -webkit-box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
 }
 
 .card:hover {
-    -webkit-box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
-    -webkit-transform: scale(1.1, 1.1);
-    -ms-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
 }
 
 .card__info {

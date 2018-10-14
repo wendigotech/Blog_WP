@@ -14,133 +14,69 @@ get_header(); ?>
                 <?php the_content(); ?> 
             </div>
         </div>                         
-        <div class="row">
-            <main>
-                <div class="content">
-                    <div class="grid">
-                        <div class="grid__item">
-                            <div class="product">
-                                <div class="product__bg"></div>
-                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 01"/>
-                                <h2 class="product__title"><?php _e( 'Marble Dream', 'blog' ); ?></h2>
-                                <h3 class="product__subtitle"><?php _e( 'Constantin Frecker', 'blog' ); ?></h3>
-                                <p class="product__description"><?php _e( 'Hashtag cred air plant drinking vinegar. Leggings yuccie chambray pop-up tousled hell of. Portland wolf mumblecore, synth cold-pressed polaroid poke cardigan gochujang farm-to-table photo booth.', 'blog' ); ?></p>
-                                <div class="product__price">
-                                    <?php _e( '$129', 'blog' ); ?>
+        <div class="row no-gutters pt-5">
+            <?php
+                $portfolio_args = array(
+                    'category_name' => 'portfolio',
+                    'order' => 'DESC'
+                )
+            ?>
+            <?php $portfolio = new WP_Query( $portfolio_args ); ?>
+            <?php if ( $portfolio->have_posts() ) : ?>
+                <section class="cards">
+                    <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
+                        <article class="card card--1">
+                            <div class="card__info-hover">
+                                <svg class="card__like" viewbox="0 0 24 24">
+                                    <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z"/>
+                                </svg>
+                                <div class="card__clock-info">
+                                    <svg class="card__clock" viewbox="0 0 24 24">
+                                        <path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z"/>
+                                    </svg>
+                                    <span class="card__time"><?php _e( '15 min', 'blog' ); ?></span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="grid__item">
-                            <div class="product">
-                                <div class="product__bg"></div>
-                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 02"/>
-                                <h2 class="product__title"><?php _e( 'Space Fantasy', 'blog' ); ?></h2>
-                                <h3 class="product__subtitle"><?php _e( 'Danica Green', 'blog' ); ?></h3>
-                                <p class="product__description"><?php _e( 'Man bun banjo pop-up meh hammock. Skateboard hammock tousled retro, etsy taiyaki narwhal gentrify fixie food truck microdosing sustainable dreamcatcher.', 'blog' ); ?></p>
-                                <div class="product__price">
-                                    <?php _e( '$199', 'blog' ); ?>
-                                </div>
+                            <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
+                            <div class="card__img <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                            <a href="#" class="card_link">
+                                <div class="card__img--hover"></div>
+                            </a>
+                            <div class="card__info">
+                                <span class="card__category"><?php single_tag_title(); ?></span>
+                                <h3 class="card__title"><?php the_title(); ?></h3>
+                                <span class="card__by"><?php _e( 'by', 'blog' ); ?> <a href="#" class="card__author" title="author"><?php the_author(); ?></a></span>
+                                <a class="btn btn-outline-warning" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Label', 'blog' ); ?></a>
+                            </div>
+                        </article>
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
+                    <article class="card card--2">
+                        <div class="card__info-hover">
+                            <svg class="card__like" viewbox="0 0 24 24">
+                                <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z"/>
+                            </svg>
+                            <div class="card__clock-info">
+                                <svg class="card__clock" viewbox="0 0 24 24">
+                                    <path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z"/>
+                                </svg>
+                                <span class="card__time"><?php _e( '5 min', 'blog' ); ?></span>
                             </div>
                         </div>
-                        <div class="grid__item">
-                            <div class="product">
-                                <div class="product__bg"></div>
-                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 03"/>
-                                <h2 class="product__title"><?php _e( 'Mighty Eighties', 'blog' ); ?></h2>
-                                <h3 class="product__subtitle"><?php _e( 'Elizabeth Smith', 'blog' ); ?></h3>
-                                <p class="product__description"><?php _e( 'Air plant affogato microdosing banjo, palo santo squid craft beer vexillologist chambray everyday carry cronut aesthetic intelligentsia.', 'blog' ); ?> </p>
-                                <div class="product__price">
-                                    <?php _e( '$159', 'blog' ); ?>
-                                </div>
-                            </div>
+                        <div class="card__img"></div>
+                        <a href="#" class="card_link">
+                            <div class="card__img--hover"></div>
+                        </a>
+                        <div class="card__info">
+                            <span class="card__category"> <?php _e( 'Travel', 'blog' ); ?></span>
+                            <h3 class="card__title"><?php _e( 'Discover the sea', 'blog' ); ?></h3>
+                            <span class="card__by"><?php _e( 'by', 'blog' ); ?> <a href="#" class="card__author" title="author"><?php _e( 'John Doe', 'blog' ); ?></a></span>
                         </div>
-                        <div class="grid__item">
-                            <div class="product">
-                                <div class="product__bg"></div>
-                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 04"/>
-                                <h2 class="product__title"><?php _e( 'Diamond Crafter', 'blog' ); ?></h2>
-                                <h3 class="product__subtitle"><?php _e( 'Fred House', 'blog' ); ?></h3>
-                                <p class="product__description"><?php _e( 'Crucifix shoreditch tumblr heirloom irony tbh gastropub migas sartorial mustache direct trade plaid readymade ramps hammock.', 'blog' ); ?></p>
-                                <div class="product__price">
-                                    <?php _e( '$199', 'blog' ); ?>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__item">
-                            <div class="product">
-                                <div class="product__bg"></div>
-                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 05"/>
-                                <h2 class="product__title"><?php _e( 'Disco Fever', 'blog' ); ?></h2>
-                                <h3 class="product__subtitle"><?php _e( 'Alice Muller', 'blog' ); ?></h3>
-                                <p class="product__description"><?php _e( 'Single-origin coffee air plant kitsch paleo iPhone vegan cold-pressed slow-carb cornhole dreamcatcher palo santo salvia lo-fi.', 'blog' ); ?> </p>
-                                <div class="product__price">
-                                    <?php _e( '$99', 'blog' ); ?>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__item">
-                            <div class="product">
-                                <div class="product__bg"></div>
-                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 06"/>
-                                <h2 class="product__title"><?php _e( 'Little Boxes', 'blog' ); ?></h2>
-                                <h3 class="product__subtitle"><?php _e( 'Xavier Brighton', 'blog' ); ?></h3>
-                                <p class="product__description"><?php _e( 'Drinking vinegar lumbersexual 90\'s flexitarian. Live-edge man bun air plant XOXO. Master cleanse vaporware keffiyeh.', 'blog' ); ?></p>
-                                <div class="product__price">
-                                    <?php _e( '$299', 'blog' ); ?>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__item">
-                            <div class="product">
-                                <div class="product__bg"></div>
-                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 07"/>
-                                <h2 class="product__title"><?php _e( 'Fractal Love', 'blog' ); ?></h2>
-                                <h3 class="product__subtitle"><?php _e( 'Walter Perry', 'blog' ); ?></h3>
-                                <p class="product__description"><?php _e( 'Leggings green juice DIY, flannel tattooed selvage plaid yr sartorial chia. Scenester you probably haven\'t heard of them locavore.', 'blog' ); ?></p>
-                                <div class="product__price">
-                                    <?php _e( '$129', 'blog' ); ?>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__item">
-                            <div class="product">
-                                <div class="product__bg"></div>
-                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 08"/>
-                                <h2 class="product__title"><?php _e( 'Liquidia', 'blog' ); ?></h2>
-                                <h3 class="product__subtitle"><?php _e( 'Lidia Greenwood', 'blog' ); ?></h3>
-                                <p class="product__description"><?php _e( 'Helvetica la croix readymade, butcher viral pitchfork chillwave pork belly vaporware blue bottle iceland semiotics subway tile irony.', 'blog' ); ?></p>
-                                <div class="product__price">
-                                    <?php _e( '$249', 'blog' ); ?>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__item">
-                            <div class="product">
-                                <div class="product__bg"></div>
-                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 09"/>
-                                <h2 class="product__title"><?php _e( 'The Buzz', 'blog' ); ?></h2>
-                                <h3 class="product__subtitle"><?php _e( 'Sarah Grand', 'blog' ); ?></h3>
-                                <p class="product__description"><?php _e( 'Celiac distillery man braid venmo, selfies you probably haven\'t heard of them tote bag forage fanny pack activated charcoal kale chips lo-fi before they sold out.', 'blog' ); ?></p>
-                                <div class="product__price">
-                                    <?php _e( '$399', 'blog' ); ?>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__item">
-                            <div class="product">
-                                <div class="product__bg"></div>
-                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 10"/>
-                                <h2 class="product__title"><?php _e( 'Sweet Escape', 'blog' ); ?></h2>
-                                <h3 class="product__subtitle"><?php _e( 'Peter Gradia', 'blog' ); ?></h3>
-                                <p class="product__description"><?php _e( 'Mumblecore bespoke blog raw denim, authentic VHS sustainable +1 freegan neutra small batch paleo. Schlitz chicharrones pork belly palo santo.', 'blog' ); ?></p>
-                                <div class="product__price">
-                                    <?php _e( '$199', 'blog' ); ?>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
+                    </article>                                     
+                </section>
+            <?php else : ?>
+                <p><?php _e( 'Sorry, no posts matched your criteria.', 'blog' ); ?></p>
+            <?php endif; ?>
         </div>
     </div>                     
 </div>                                 
