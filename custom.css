@@ -685,14 +685,12 @@ p {
     font-variant: small-caps;
 }
 
-body {
-    background-color: #D2DBDD;
+.cards {
+    width: 100%;
     display: flex;
     display: -webkit-flex;
-    -webkit-justify-content: center;
-    -webkit-align-items: center;
     justify-content: center;
-    align-items: center;
+    -webkit-justify-content: center;
 }
 
 .card--1 .card__img,
@@ -762,7 +760,7 @@ body {
     margin-right: 25px;
     transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
     background-color: #fff;
-    width: 100%;
+    width: 33.3%;
     position: relative;
     border-radius: 12px;
     overflow: hidden;

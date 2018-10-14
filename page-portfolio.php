@@ -14,16 +14,15 @@ get_header(); ?>
                 <?php the_content(); ?> 
             </div>
         </div>                         
-        <div class="row no-gutters pt-5">
+        <div class="row mt-5 mb-5">
             <?php
                 $portfolio_args = array(
-                    'category_name' => 'portfolio',
-                    'order' => 'DESC'
+                    'category_name' => 'portfolio'
                 )
             ?>
             <?php $portfolio = new WP_Query( $portfolio_args ); ?>
             <?php if ( $portfolio->have_posts() ) : ?>
-                <section class="cards">
+                <section <?php post_class( 'cards' ); ?> id="post-<?php the_ID(); ?>">
                     <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
                         <article class="card card--1">
                             <div class="card__info-hover">
@@ -37,17 +36,37 @@ get_header(); ?>
                                     <span class="card__time"><?php _e( '15 min', 'blog' ); ?></span>
                                 </div>
                             </div>
-                            <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal' ) : null; ?>
-                            <div class="card__img" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            <a href="#" class="card_link">
-                                <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal' ) : null; ?>
-                                <div class="card__img--hover" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                            <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
+                            <div class="card__img <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                            <a href="#" class="card_link" data-toggle="modal" data-target="#modal1">
+                                <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
+                                <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                                <div class="modal fade pg-show-modal" id="modal1" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
+                                    <div class="modal-dialog modal-lg"> 
+                                        <div class="modal-content"> 
+                                            <div class="modal-header"> 
+                                                <h4 class="modal-title"><?php the_title(); ?></h4> 
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                                                                 
+                                            </div>                                                             
+
+                                            <div class="modal-body"> 
+                                                <?php the_content(); ?> 
+                                            </div>                                                             
+
+                                            <div class="modal-footer"> 
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    <?php _e( 'Close', 'blog' ); ?>
+                                                </button>                                                                                                                                  
+                                            </div>                                                             
+                                        </div>                                                         
+                                    </div>                                                     
+                                </div>
                             </a>
                             <div class="card__info">
                                 <span class="card__category"><?php single_tag_title(); ?></span>
                                 <h3 class="card__title"><?php the_title(); ?></h3>
                                 <span class="card__by"><?php _e( 'by', 'blog' ); ?> <a href="#" class="card__author" title="author"><?php the_author(); ?></a></span>
-                                <a class="btn btn-outline-warning" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Label', 'blog' ); ?></a>
+                                <a class="btn btn-dark btn-outline-warning float-right" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Show more', 'blog' ); ?></a>
                             </div>
                         </article>
                     <?php endwhile; ?>
