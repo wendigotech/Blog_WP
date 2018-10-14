@@ -26,13 +26,3 @@ figure,
 #page {
     word-wrap: break-word;
 }
-
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr 100px 1fr 100px;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-gap: 20px;
-    grid-template-areas: "one one . . three three" "one one two two three three" "five five two two six six" "five five four four six six" ". . four four . .";
-}
