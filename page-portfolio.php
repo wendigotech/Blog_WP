@@ -37,8 +37,8 @@ get_header(); ?>
                                     <span class="card__time"><?php _e( '15 min', 'blog' ); ?></span>
                                 </div>
                             </div>
-                            <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal' ) : null; ?>
-                            <div class="card__img" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                            <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'card_img' ) : null; ?>
+                            <div class="card__img <?php if($image_attributes) echo 'card_img'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             <a href="#" class="card_link">
                                 <div class="card__img--hover"></div>
                             </a>
