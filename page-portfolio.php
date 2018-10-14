@@ -14,71 +14,134 @@ get_header(); ?>
                 <?php the_content(); ?> 
             </div>
         </div>                         
-        <?php
-            $portfolio_args = array(
-                'category_name' => 'portfolio',
-                'order' => 'DESC'
-            )
-        ?>
-        <?php $portfolio = new WP_Query( $portfolio_args ); ?>
-        <?php if ( $portfolio->have_posts() ) : ?>
-            <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
-                <div style="display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:100px 100px 100px 100px;grid-gap:21px;" <?php post_class( 'row' ); ?> id="post-<?php the_ID(); ?>">
-                    <figure class="snip1543">
-                        <?php
-                            if ( has_post_thumbnail() ) {
-                                the_post_thumbnail( 'normal' );
-                            }
-                         ?>
-                        <figcaption>
-                            <h3><?php the_title(); ?></h3>
-                            <?php the_excerpt( ); ?>
-                        </figcaption>
-                        <a href="#" data-toggle="modal" data-target="#modal1"></a>
-                        <div class="modal fade pg-show-modal" id="modal1" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true"> 
-                            <div class="modal-dialog modal-dialog-centered modal-lg"> 
-                                <div class="modal-content"> 
-                                    <div class="modal-header"> 
-                                        <h4 class="modal-title"><?php _e( 'Modal title', 'blog' ); ?></h4> 
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                                                         
-                                    </div>                                                     
-                                    <div class="modal-body"> 
-                                        <p><?php _e( 'One fine body&hellip;', 'blog' ); ?></p> 
-                                    </div>                                                     
-                                    <div class="modal-footer"> 
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                                            <?php _e( 'Close', 'blog' ); ?>
-                                        </button>                                                         
-                                        <button type="button" class="btn btn-primary">
-                                            <?php _e( 'Save changes', 'blog' ); ?>
-                                        </button>                                                         
-                                    </div>                                                     
-                                </div>                                                 
-                            </div>                                             
+        <div class="row">
+            <main>
+                <div class="content">
+                    <div class="grid">
+                        <div class="grid__item">
+                            <div class="product">
+                                <div class="product__bg"></div>
+                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 01"/>
+                                <h2 class="product__title"><?php _e( 'Marble Dream', 'blog' ); ?></h2>
+                                <h3 class="product__subtitle"><?php _e( 'Constantin Frecker', 'blog' ); ?></h3>
+                                <p class="product__description"><?php _e( 'Hashtag cred air plant drinking vinegar. Leggings yuccie chambray pop-up tousled hell of. Portland wolf mumblecore, synth cold-pressed polaroid poke cardigan gochujang farm-to-table photo booth.', 'blog' ); ?></p>
+                                <div class="product__price">
+                                    <?php _e( '$129', 'blog' ); ?>
+                                </div>
+                            </div>
                         </div>
-                    </figure>
-                    <figure class="snip1543" style="grid-area:1 / 3 / 3 / 4;">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample101.jpg" alt="sample101"/>
-                        <figcaption>
-                            <h3><?php _e( 'Indigo Violet', 'blog' ); ?></h3>
-                            <p><?php _e( 'But Calvin is no kind and loving god! He\'s one of the old gods! He demands sacrifice!', 'blog' ); ?> </p>
-                        </figcaption>
-                        <a href="#"></a>
-                    </figure>
-                    <figure class="snip1543" style="grid-area:3 / 1 / 5 / 2;">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample101.jpg" alt="sample101"/>
-                        <figcaption>
-                            <h3><?php _e( 'Indigo Violet', 'blog' ); ?></h3>
-                            <p><?php _e( 'But Calvin is no kind and loving god! He\'s one of the old gods! He demands sacrifice!', 'blog' ); ?> </p>
-                        </figcaption>
-                        <a href="#"></a>
-                    </figure>
+                        <div class="grid__item">
+                            <div class="product">
+                                <div class="product__bg"></div>
+                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 02"/>
+                                <h2 class="product__title"><?php _e( 'Space Fantasy', 'blog' ); ?></h2>
+                                <h3 class="product__subtitle"><?php _e( 'Danica Green', 'blog' ); ?></h3>
+                                <p class="product__description"><?php _e( 'Man bun banjo pop-up meh hammock. Skateboard hammock tousled retro, etsy taiyaki narwhal gentrify fixie food truck microdosing sustainable dreamcatcher.', 'blog' ); ?></p>
+                                <div class="product__price">
+                                    <?php _e( '$199', 'blog' ); ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item">
+                            <div class="product">
+                                <div class="product__bg"></div>
+                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 03"/>
+                                <h2 class="product__title"><?php _e( 'Mighty Eighties', 'blog' ); ?></h2>
+                                <h3 class="product__subtitle"><?php _e( 'Elizabeth Smith', 'blog' ); ?></h3>
+                                <p class="product__description"><?php _e( 'Air plant affogato microdosing banjo, palo santo squid craft beer vexillologist chambray everyday carry cronut aesthetic intelligentsia.', 'blog' ); ?> </p>
+                                <div class="product__price">
+                                    <?php _e( '$159', 'blog' ); ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item">
+                            <div class="product">
+                                <div class="product__bg"></div>
+                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 04"/>
+                                <h2 class="product__title"><?php _e( 'Diamond Crafter', 'blog' ); ?></h2>
+                                <h3 class="product__subtitle"><?php _e( 'Fred House', 'blog' ); ?></h3>
+                                <p class="product__description"><?php _e( 'Crucifix shoreditch tumblr heirloom irony tbh gastropub migas sartorial mustache direct trade plaid readymade ramps hammock.', 'blog' ); ?></p>
+                                <div class="product__price">
+                                    <?php _e( '$199', 'blog' ); ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item">
+                            <div class="product">
+                                <div class="product__bg"></div>
+                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 05"/>
+                                <h2 class="product__title"><?php _e( 'Disco Fever', 'blog' ); ?></h2>
+                                <h3 class="product__subtitle"><?php _e( 'Alice Muller', 'blog' ); ?></h3>
+                                <p class="product__description"><?php _e( 'Single-origin coffee air plant kitsch paleo iPhone vegan cold-pressed slow-carb cornhole dreamcatcher palo santo salvia lo-fi.', 'blog' ); ?> </p>
+                                <div class="product__price">
+                                    <?php _e( '$99', 'blog' ); ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item">
+                            <div class="product">
+                                <div class="product__bg"></div>
+                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 06"/>
+                                <h2 class="product__title"><?php _e( 'Little Boxes', 'blog' ); ?></h2>
+                                <h3 class="product__subtitle"><?php _e( 'Xavier Brighton', 'blog' ); ?></h3>
+                                <p class="product__description"><?php _e( 'Drinking vinegar lumbersexual 90\'s flexitarian. Live-edge man bun air plant XOXO. Master cleanse vaporware keffiyeh.', 'blog' ); ?></p>
+                                <div class="product__price">
+                                    <?php _e( '$299', 'blog' ); ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item">
+                            <div class="product">
+                                <div class="product__bg"></div>
+                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 07"/>
+                                <h2 class="product__title"><?php _e( 'Fractal Love', 'blog' ); ?></h2>
+                                <h3 class="product__subtitle"><?php _e( 'Walter Perry', 'blog' ); ?></h3>
+                                <p class="product__description"><?php _e( 'Leggings green juice DIY, flannel tattooed selvage plaid yr sartorial chia. Scenester you probably haven\'t heard of them locavore.', 'blog' ); ?></p>
+                                <div class="product__price">
+                                    <?php _e( '$129', 'blog' ); ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item">
+                            <div class="product">
+                                <div class="product__bg"></div>
+                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 08"/>
+                                <h2 class="product__title"><?php _e( 'Liquidia', 'blog' ); ?></h2>
+                                <h3 class="product__subtitle"><?php _e( 'Lidia Greenwood', 'blog' ); ?></h3>
+                                <p class="product__description"><?php _e( 'Helvetica la croix readymade, butcher viral pitchfork chillwave pork belly vaporware blue bottle iceland semiotics subway tile irony.', 'blog' ); ?></p>
+                                <div class="product__price">
+                                    <?php _e( '$249', 'blog' ); ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item">
+                            <div class="product">
+                                <div class="product__bg"></div>
+                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 09"/>
+                                <h2 class="product__title"><?php _e( 'The Buzz', 'blog' ); ?></h2>
+                                <h3 class="product__subtitle"><?php _e( 'Sarah Grand', 'blog' ); ?></h3>
+                                <p class="product__description"><?php _e( 'Celiac distillery man braid venmo, selfies you probably haven\'t heard of them tote bag forage fanny pack activated charcoal kale chips lo-fi before they sold out.', 'blog' ); ?></p>
+                                <div class="product__price">
+                                    <?php _e( '$399', 'blog' ); ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item">
+                            <div class="product">
+                                <div class="product__bg"></div>
+                                <img class="product__img" src="https://images.unsplash.com/photo-1535486607281-4fc90307a8bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIwOTIyfQ&s=c79e7cc0e477b51ce523247ab4925638q=85&fm=jpg&crop=faces&cs=srgb&w=200&h=150&fit=crop" alt="img 10"/>
+                                <h2 class="product__title"><?php _e( 'Sweet Escape', 'blog' ); ?></h2>
+                                <h3 class="product__subtitle"><?php _e( 'Peter Gradia', 'blog' ); ?></h3>
+                                <p class="product__description"><?php _e( 'Mumblecore bespoke blog raw denim, authentic VHS sustainable +1 freegan neutra small batch paleo. Schlitz chicharrones pork belly palo santo.', 'blog' ); ?></p>
+                                <div class="product__price">
+                                    <?php _e( '$199', 'blog' ); ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
-        <?php else : ?>
-            <p><?php _e( 'Sorry, no posts matched your criteria.', 'blog' ); ?></p>
-        <?php endif; ?>
+            </main>
+        </div>
     </div>                     
 </div>                                 
 
