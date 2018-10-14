@@ -685,165 +685,140 @@ p {
     font-variant: small-caps;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import url(https://fonts.googleapis.com/css?family=Teko:700);
+body {
+    background-color: #D2DBDD;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    align-items: center;
+}
 
-.snip1543 {
-    background-color: #fff;
-    color: #ffffff;
-    display: inline-block;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    overflow: hidden;
-    position: relative;
-    text-align: left;
+.card--1 .card__img,
+.card--1 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.card--2 .card__img,
+.card--2 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.card__like {
+    width: 18px;
+}
+
+.card__clock {
+    width: 15px;
+    vertical-align: middle;
+    fill: #AD7D52;
+}
+
+.card__time {
+    font-size: 12px;
+    color: #AD7D52;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.card__clock-info {
+    float: right;
+}
+
+.card__img {
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    column-fill: auto;
-    grid-row-start: 1;
-    grid-column-start: 1;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
-.snip1543 *,
-.snip1543 *:before,
-.snip1543 *:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.45s ease;
-    transition: all 0.45s ease;
-}
-
-.snip1543 img {
-    backface-visibility: hidden;
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
     width: 100%;
-}
-
-.snip1543:before,
-.snip1543:after {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: '';
-    background-color: #b81212;
-    opacity: 0.5;
-    -webkit-transition: all 0.45s ease;
-    transition: all 0.45s ease;
-}
-
-.snip1543:before {
-    -webkit-transform: skew(30deg) translateX(-80%);
-    transform: skew(30deg) translateX(-80%);
-}
-
-.snip1543:after {
-    -webkit-transform: skew(-30deg) translateX(-70%);
-    transform: skew(-30deg) translateX(-70%);
-}
-
-.snip1543 figcaption {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 1;
-    bottom: 0;
-    padding: 25px 40% 25px 20px;
-}
-
-.snip1543 figcaption:before,
-.snip1543 figcaption:after {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #b81212;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-    content: '';
-    opacity: 0.5;
-    z-index: -1;
-    background-image: linear-gradient(90deg, #03001e, #7303c0, #ec38bc, #fdeff9);
-}
-
-.snip1543 figcaption:before {
-    -webkit-transform: skew(30deg) translateX(-100%);
-    transform: skew(30deg) translateX(-100%);
-}
-
-.snip1543 figcaption:after {
-    -webkit-transform: skew(-30deg) translateX(-90%);
-    transform: skew(-30deg) translateX(-90%);
-}
-
-.snip1543 h3,
-.snip1543 p {
-    margin: 0;
     opacity: 0;
-    letter-spacing: 1px;
-}
-
-.snip1543 h3 {
-    font-family: 'Teko', sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    line-height: 1em;
-    text-transform: uppercase;
-}
-
-.snip1543 p {
-    font-size: 0.9em;
-}
-
-.snip1543 a {
-    position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
 }
 
-.snip1543:hover h3,
-.snip1543.hover h3,
-.snip1543:hover p,
-.snip1543.hover p {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 0.9;
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
+.card__img--hover {
+    transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    top: 0;
 }
 
-.snip1543:hover:before,
-.snip1543.hover:before {
-    -webkit-transform: skew(30deg) translateX(-20%);
-    transform: skew(30deg) translateX(-20%);
-    -webkit-transition-delay: 0.05s;
-    transition-delay: 0.05s;
+.card {
+    margin-right: 25px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
 }
 
-.snip1543:hover:after,
-.snip1543.hover:after {
-    -webkit-transform: skew(-30deg) translateX(-10%);
-    transform: skew(-30deg) translateX(-10%);
+.card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
 }
 
-.snip1543:hover figcaption:before,
-.snip1543.hover figaption:before {
-    -webkit-transform: skew(30deg) translateX(-40%);
-    transform: skew(30deg) translateX(-40%);
-    -webkit-transition-delay: 0.15s;
-    transition-delay: 0.15s;
+.card__info {
+    z-index: 2;
+    background-color: #fff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 16px 24px 24px 24px;
 }
 
-.snip1543:hover figcaption:after,
-.snip1543.hover figcaption:after {
-    -webkit-transform: skew(-30deg) translateX(-30%);
-    transform: skew(-30deg) translateX(-30%);
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s;
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.card__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.card:hover .card__info-hover {
+    opacity: 1;
 }
