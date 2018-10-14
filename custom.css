@@ -824,6 +824,6 @@ p {
 section.cards-grid {
     display: grid;
     grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
-    grid-template-rows: 100px 100px 1fr 100px 100px 1fr 100px 100px 100px;
+    grid-template-rows: 100px 100px 1fr 100px 100px 1fr 100px 100px 100px 100px;
     grid-gap: 20px;
 }
