@@ -15,7 +15,7 @@ get_header(); ?>
             </div>
         </div>                         
         <div class="row mt-5 mb-5">
-            <section class="cards cards-grid">
+            <section class="cards cards-grid col-lg-12">
                 <?php
                     $portfolio_args = array(
                         'category_name' => 'portfolio',
