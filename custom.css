@@ -694,6 +694,9 @@ p {
     width: 100%;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    column-fill: auto;
+    grid-row-start: 1;
+    grid-column-start: 1;
 }
 
 .snip1543 *,
