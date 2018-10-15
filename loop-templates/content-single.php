@@ -1,24 +1,19 @@
 <div> 
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-            <article <?php post_class(); ?> id="post-<?php the_ID(); ?>"> 
-                <header class="entry-header"> 
-                    <h1><?php the_title(); ?></h1> 
-                    <div class="entry-meta"> 
-                        <p><?php _e( 'Posted on', 'blog' ); ?> <span><?php the_modified_date(); ?></span> <?php _e( 'by', 'blog' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p> 
-                    </div>                     
-                </header>                 
-                <div class="entry-content"> 
-                    <?php the_content(); ?> 
-                    <?php wp_link_pages( array() ); ?> 
-                </div>                 
-                <footer class="entry-footer"> 
-                    <?php if ( has_tag() ) : ?>
-                        <span class="tags-links"><?php the_tags( 'Tags: ', ', ' ); ?></span>
-                    <?php endif; ?> 
-                    <?php edit_post_link( '<b class="text-success">Edit Post</b>' ); ?> 
-                </footer>                 
-            </article>
+            <div <?php post_class( 'blog-item' ); ?> id="post-<?php the_ID(); ?>">
+                <div class="row">
+                    <h2 class="title"><?php the_title(); ?></h2>
+                </div>
+                <div class="content col-lg-12">
+                    <p> <?php _e( 'Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı', 'blog' ); ?> <?php _e( 'bilinmeyen bir matbaacının bir hurufat numune kitabı...', 'blog' ); ?> </p>
+                    <row>
+                        <img src="http://muhammederdem.com.tr/reference/1.jpg" alt="">
+                        <img src="http://muhammederdem.com.tr/reference/1.jpg" alt="">
+                        <img src="http://muhammederdem.com.tr/reference/1.jpg" alt="">
+                    </row>
+                </div>
+            </div>
         <?php endwhile; ?>
     <?php else : ?>
         <p><?php _e( 'Sorry, no posts matched your criteria.', 'blog' ); ?></p>

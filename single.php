@@ -11,7 +11,7 @@ get_header(); ?>
                     <?php endif; ?>                                                                           
                 </div>
             <?php endif; ?> 
-            <div class="content-area col-md-8 content-area" id="primary"> 
+            <div class="content-area col-md-8" id="primary"> 
                 <main class="site-main" id="main"> 
                     <?php get_template_part( 'loop-templates/content-single' ); ?> 
                 </main>                                 
