@@ -6,12 +6,7 @@
                     <h2 class="title"><?php the_title(); ?></h2>
                 </div>
                 <div class="content col-lg-12">
-                    <p> <?php _e( 'Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı', 'blog' ); ?> <?php _e( 'bilinmeyen bir matbaacının bir hurufat numune kitabı...', 'blog' ); ?> </p>
-                    <row>
-                        <img src="http://muhammederdem.com.tr/reference/1.jpg" alt="">
-                        <img src="http://muhammederdem.com.tr/reference/1.jpg" alt="">
-                        <img src="http://muhammederdem.com.tr/reference/1.jpg" alt="">
-                    </row>
+                    <?php the_content(); ?>
                 </div>
             </div>
         <?php endwhile; ?>

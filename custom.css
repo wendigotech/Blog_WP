@@ -828,19 +828,12 @@ section.cards-grid {
     grid-gap: 30px;
 }
 
-.blog-item img:hover {
-    display: block;
-    margin-top: 10px;
-    width: 100%;
-    height: 100%;
-    transform: scale(2);
-}
-
 .blog-item img {
     display: block;
     margin-top: 10px;
     width: 100%;
     height: 100%;
+    border-radius: 15px;
 }
 
 .blog-item a {
