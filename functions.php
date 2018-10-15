@@ -90,6 +90,26 @@ function st2_widgets_init() {
     /* Pinegrow generated Register Sidebars Begin */
 
     register_sidebar( array(
+        'name' => __( 'Left Sidebar', 'blog' ),
+        'id' => 'left-sidebar',
+        'description' => 'Left Sidebar widget area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Right Sidebar', 'blog' ),
+        'id' => 'right-sidebar',
+        'description' => 'Right Sidebar widget area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    ) );
+
+    register_sidebar( array(
         'name' => __( 'Hero Slider', 'blog' ),
         'id' => 'hero',
         'description' => 'Hero slider area. Place two or more widgets here and they will slide!',
@@ -115,26 +135,6 @@ function st2_widgets_init() {
         'description' => 'Full top widget with dynamic grid',
         'before_widget' => '<div id="%1$s" class="static-hero-widget %2$s '. st2_slbd_count_widgets( 'statichero' ) .'">',
         'after_widget' => '</div><!-- .static-hero-widget -->',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>'
-    ) );
-
-    register_sidebar( array(
-        'name' => __( 'Left Sidebar', 'blog' ),
-        'id' => 'left-sidebar',
-        'description' => 'Left Sidebar widget area',
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>'
-    ) );
-
-    register_sidebar( array(
-        'name' => __( 'Right Sidebar', 'blog' ),
-        'id' => 'right-sidebar',
-        'description' => 'Right Sidebar widget area',
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>'
     ) );
@@ -192,6 +192,30 @@ function st2_customize_register( $wp_customize ) {
     ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
 
+    $wp_customize->add_setting( 'show_left_sidebar', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'show_left_sidebar', array(
+        'label' => __( 'Show Left Sidebar', 'blog' ),
+        'description' => __( 'Activate the Left Sidebar', 'blog' ),
+        'type' => 'checkbox',
+        'section' => 'theme_settings'
+    ));
+
+    $wp_customize->add_setting( 'show_right_sidebar', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'show_right_sidebar', array(
+        'label' => __( 'Show Right Sidebar', 'blog' ),
+        'description' => __( 'Activate the Right Sidebar', 'blog' ),
+        'type' => 'checkbox',
+        'section' => 'theme_settings'
+    ));
+
     $wp_customize->add_setting( 'show_jumbotron', array(
         'type' => 'theme_mod',
         'sanitize_callback' => $pgwp_sanitize
@@ -248,30 +272,6 @@ function st2_customize_register( $wp_customize ) {
         'type' => 'color',
         'section' => 'header_settings'
     ) ) );
-
-    $wp_customize->add_setting( 'show_left_sidebar', array(
-        'type' => 'theme_mod',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'show_left_sidebar', array(
-        'label' => __( 'Show Left Sidebar', 'blog' ),
-        'description' => __( 'Activate the Left Sidebar', 'blog' ),
-        'type' => 'checkbox',
-        'section' => 'theme_settings'
-    ));
-
-    $wp_customize->add_setting( 'show_right_sidebar', array(
-        'type' => 'theme_mod',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'show_right_sidebar', array(
-        'label' => __( 'Show Right Sidebar', 'blog' ),
-        'description' => __( 'Activate the Right Sidebar', 'blog' ),
-        'type' => 'checkbox',
-        'section' => 'theme_settings'
-    ));
 
     $wp_customize->add_setting( 'footer_text', array(
         'type' => 'theme_mod',

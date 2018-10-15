@@ -679,8 +679,8 @@ h6 {
 
 p {
     font-family: Roboto;
-    font-size: 1.1em;
-    font-weight: 800;
+    font-size: 1em;
+    font-weight: 600;
     font-style: normal;
     font-variant: small-caps;
 }
@@ -825,5 +825,125 @@ section.cards-grid {
     display: grid;
     grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
     grid-template-rows: 100px 100px 1fr 100px 100px 1fr 100px 100px 100px 100px;
-    grid-gap: 20px;
+    grid-gap: 30px;
+}
+
+::selection {
+    background: hsla(341, 48%, 75%, 1);
+}
+
+:root {
+    font-size: 1.3em;
+    --body-color: #333;
+    --padding: 15vw;
+    --hero-height: 75vh;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--body-color);
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.5;
+    height: calc(var(--hero-height) + 100vh);
+    overflow: hidden;
+}
+
+.img img {
+    min-height: 100%;
+    min-width: 100%;
+    max-width: unset;
+}
+
+.img,
+.img img {
+    /* For silky smooth scroll effects */
+     transition: all, 0.01s;
+     transition-timing-function: ease-in-out;
+}
+
+.hero {
+    display: flex;
+    align-items: flex-end;
+}
+
+blockquote {
+    border-left: 5px solid;
+    margin: 0;
+    padding: 1em 40px;
+    font-size: 1.2em;
+}
+
+blockquote:before {
+    content: '\00201C';
+    margin-right: 0.2em;
+}
+
+blockquote:after {
+    content: '\00201D';
+    margin-left: 0.2em;
+}
+
+blockquote:before,
+blockquote:after {
+    font-size: 1.5em;
+    vertical-align: sub;
+    font-weight: 900;
+}
+
+main {
+    line-height: 2em;
+    letter-spacing: 0.1px;
+}
+
+main h2:before,
+main h3:before {
+    content: '';
+    display: block;
+    width: 10%;
+    border-top: 0.15em solid var(--body-color);
+    padding-top: 1em;
+}
+
+footer {
+    min-height: 10em;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    opacity: 0.8;
+    transition: opacity, 0.25s;
+}
+
+footer img:hover {
+    opacity: 1;
+}
+
+main {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:cc='http://creativecommons.org/ns%23' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.1' id='svg2' viewBox='0 0 162.73344 95.644968' height='26.993135mm' width='45.926994mm'%3E%3Cdefs id='defs4' /%3E%3Cmetadata id='metadata7'%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=''%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage' /%3E%3Cdc:title%3E%3C/dc:title%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3Cg transform='translate%28-280.83244,-424.44587%29' id='layer1'%3E%3Cpath id='path3336' d='M 282.85714,518.07649 441.5412,426.46021' style='fill:none;fill-rule:evenodd;stroke:%23000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:32, 8, 4, 8;stroke-dashoffset:0;stroke-opacity:1' /%3E%3C/g%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:cc='http://creativecommons.org/ns%23' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.1' id='svg2' viewBox='0 0 162.73344 191.28992' height='53.986267mm' width='45.926994mm'%3E%3Cdefs id='defs4' /%3E%3Cmetadata id='metadata7'%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=''%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage' /%3E%3Cdc:title%3E%3C/dc:title%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3Cg transform='translate%28-280.83244,-424.44587%29' id='layer1'%3E%3Cpath id='path3336' d='M 282.85714,518.07649 441.5412,426.46021' style='fill:none;fill-rule:evenodd;stroke:%23000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:32, 8, 4, 8;stroke-dashoffset:0;stroke-opacity:1;opacity:0.5' /%3E%3Cpath id='path4186' d='M 327.18315,588.12982 441.5412,522.10517' style='fill:none;fill-rule:evenodd;stroke:%23000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:32, 8, 4, 8;stroke-dashoffset:0;stroke-opacity:1;opacity:0.25' /%3E%3C/g%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-position: top right;
+    background-size: calc(var(--padding) - 1em);
+    background-repeat-x: no-repeat;
+    background-position: calc(100vw - var(--padding) + 1em + 3px) top;
 }
