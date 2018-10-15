@@ -305,6 +305,14 @@ if ( ! function_exists( 'st2_enqueue_scripts' ) ) :
 
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', null, null, true );
 
+    wp_deregister_script( 'rellax' );
+    wp_register_script( 'rellax', 'https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.0/rellax.min.js', null, null, true );
+    wp_enqueue_script( 'rellax' );
+
+    wp_deregister_script( null );
+    wp_register_script( null, null, null, null, true );
+    wp_enqueue_script( null );
+
     /* Pinegrow generated Enqueue Scripts End */
 
         /* Pinegrow generated Enqueue Styles Begin */
