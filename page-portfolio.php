@@ -29,7 +29,7 @@ get_header(); ?>
                         <article class="card card--1" style="grid-area:1 / 2 / 4 / 3;">
                             <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                             <div class="card__img <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link">
+                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link" data-toggle="modal" data-target="#modal1">
                                 <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
@@ -50,7 +50,7 @@ get_header(); ?>
                         <article class="card card--1" style="grid-area:2 / 3 / 5 / 4;">
                             <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                             <div class="card__img <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link">
+                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link" data-toggle="modal" data-target="#modal1">
                                 <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
@@ -71,7 +71,7 @@ get_header(); ?>
                         <article class="card card--1" style="grid-area:1 / 4 / 4 / 6;">
                             <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                             <div class="card__img <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link">
+                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link" data-toggle="modal" data-target="#modal1">
                                 <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
@@ -92,7 +92,7 @@ get_header(); ?>
                         <article class="card card--1" style="grid-area:4 / 5 / 7 / 6;">
                             <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                             <div class="card__img <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link">
+                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link" data-toggle="modal" data-target="#modal1">
                                 <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
@@ -113,7 +113,7 @@ get_header(); ?>
                         <article class="card card--1" style="grid-area:5 / 2 / 8 / 3;">
                             <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                             <div class="card__img <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link">
+                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link" data-toggle="modal" data-target="#modal1">
                                 <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
@@ -134,7 +134,7 @@ get_header(); ?>
                         <article class="card card--1" style="grid-area:5 / 3 / 7 / 5;">
                             <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                             <div class="card__img <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link">
+                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link" data-toggle="modal" data-target="#modal1">
                                 <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
@@ -155,7 +155,7 @@ get_header(); ?>
                         <article class="card card--1" style="grid-area:8 / 2 / 11 / 4;">
                             <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                             <div class="card__img <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link">
+                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link" data-toggle="modal" data-target="#modal1">
                                 <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
@@ -176,7 +176,7 @@ get_header(); ?>
                         <article class="card card--1" style="grid-area:7 / 4 / 10 / 6;">
                             <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                             <div class="card__img <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link">
+                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="card_link" data-toggle="modal" data-target="#modal1">
                                 <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>

@@ -1,21 +1,28 @@
- 
-    <section class="hero mt-5 pt-5 mb-5">
-        <div>
-            <div class="img">
-                <?php
-                    if ( has_post_thumbnail() ) {
-                        the_post_thumbnail( 'large', array(
-                        'class' => 'rellax'
-                    ) );
-                    }
-                 ?>
-            </div>
-            <h1><?php the_title(); ?></h1>
-        </div>
-    </section>
-    <main>
-        <?php the_content(); ?>
-    </main>     
+<div> 
+    <?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+            <article <?php post_class(); ?> id="post-<?php the_ID(); ?>"> 
+                <header class="entry-header"> 
+                    <h1><?php the_title(); ?></h1> 
+                    <div class="entry-meta"> 
+                        <p><?php _e( 'Posted on', 'blog' ); ?> <span><?php the_modified_date(); ?></span> <?php _e( 'by', 'blog' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p> 
+                    </div>                     
+                </header>                 
+                <div class="entry-content"> 
+                    <?php the_content(); ?> 
+                    <?php wp_link_pages( array() ); ?> 
+                </div>                 
+                <footer class="entry-footer"> 
+                    <?php if ( has_tag() ) : ?>
+                        <span class="tags-links"><?php the_tags( 'Tags: ', ', ' ); ?></span>
+                    <?php endif; ?> 
+                    <?php edit_post_link( '<b class="text-success">Edit Post</b>' ); ?> 
+                </footer>                 
+            </article>
+        <?php endwhile; ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.', 'blog' ); ?></p>
+    <?php endif; ?> 
     <nav class="container navigation post-navigation pt-3 pb-3"> 
         <h2 class="sr-only"><?php _e( 'Post navigation', 'blog' ); ?></h2> 
         <div class="row nav-links justify-content-between"> 
@@ -27,3 +34,4 @@
     <?php if ( comments_open() || get_comments_number() || is_single() ) : ?>
         <?php comments_template( '/comments.php' ); ?>
     <?php endif; ?> 
+</div>
