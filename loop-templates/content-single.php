@@ -2,7 +2,7 @@
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
             <div <?php post_class( 'blog-item' ); ?> id="post-<?php the_ID(); ?>">
-                <div class="row">
+                <div class="row text-center no-gutters">
                     <h2 class="title"><?php the_title(); ?></h2>
                 </div>
                 <div class="content col-lg-12">
