@@ -55,7 +55,7 @@ get_header(); ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
                             <div class="card__info">
-                                <span class="card__category"><?php single_tag_title(); ?></span>
+                                <span class="card__category"><?php the_tags(); ?></span>
                                 <h3 class="card__title"><?php the_title(); ?></h3>
                                 <span class="card__by"><?php _e( 'by', 'blog' ); ?> <a href="#" class="card__author" title="author"><?php the_author(); ?></a></span>
                             </div>
@@ -76,7 +76,7 @@ get_header(); ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
                             <div class="card__info">
-                                <span class="card__category"><?php single_tag_title(); ?></span>
+                                <span class="card__category"><?php the_tags(); ?></span>
                                 <h3 class="card__title"><?php the_title(); ?></h3>
                                 <span class="card__by"><?php _e( 'by', 'blog' ); ?> <a href="#" class="card__author" title="author"><?php the_author(); ?></a></span>
                             </div>
@@ -97,7 +97,7 @@ get_header(); ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
                             <div class="card__info">
-                                <span class="card__category"><?php single_tag_title(); ?></span>
+                                <span class="card__category"><?php the_tags(); ?></span>
                                 <h3 class="card__title"><?php the_title(); ?></h3>
                                 <span class="card__by"><?php _e( 'by', 'blog' ); ?> <a href="#" class="card__author" title="author"><?php the_author(); ?></a></span>
                             </div>
@@ -118,7 +118,7 @@ get_header(); ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
                             <div class="card__info">
-                                <span class="card__category"><?php single_tag_title(); ?></span>
+                                <span class="card__category"><?php the_tags(); ?></span>
                                 <h3 class="card__title"><?php the_title(); ?></h3>
                                 <span class="card__by"><?php _e( 'by', 'blog' ); ?> <a href="#" class="card__author" title="author"><?php the_author(); ?></a></span>
                             </div>
@@ -139,7 +139,7 @@ get_header(); ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
                             <div class="card__info">
-                                <span class="card__category"><?php single_tag_title(); ?></span>
+                                <span class="card__category"><?php the_tags(); ?></span>
                                 <h3 class="card__title"><?php the_title(); ?></h3>
                                 <span class="card__by"><?php _e( 'by', 'blog' ); ?> <a href="#" class="card__author" title="author"><?php the_author(); ?></a></span>
                             </div>
@@ -160,7 +160,7 @@ get_header(); ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
                             <div class="card__info">
-                                <span class="card__category"><?php single_tag_title(); ?></span>
+                                <span class="card__category"><?php the_tags(); ?></span>
                                 <h3 class="card__title"><?php the_title(); ?></h3>
                                 <span class="card__by"><?php _e( 'by', 'blog' ); ?> <a href="#" class="card__author" title="author"><?php the_author(); ?></a></span>
                             </div>
@@ -181,7 +181,7 @@ get_header(); ?>
                                 <div class="card__img--hover <?php if($image_attributes) echo 'with-image'; ?>" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </a>
                             <div class="card__info">
-                                <span class="card__category"><?php single_tag_title(); ?></span>
+                                <span class="card__category"><?php the_tags(); ?></span>
                                 <h3 class="card__title"><?php the_title(); ?></h3>
                                 <span class="card__by"><?php _e( 'by', 'blog' ); ?> <a href="#" class="card__author" title="author"><?php the_author(); ?></a></span>
                             </div>
