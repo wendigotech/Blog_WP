@@ -29,7 +29,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <header> 
                 <div itemscope="" itemtype="http://schema.org/WebSite" id="wrapper-navbar"> 
                     <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'blog' ); ?></a> 
-                    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border border-dark border-top-0 border-right-0 border-left-0" style="border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;"> 
+                    <nav class="navbar-expand-lg border-top-0 border-right-0 border-left-0 border border-dark navbar-light bg-light navbar" style="border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;"> 
                         <div class="container"> 
                             <?php if ( ! has_custom_logo() ) : ?>
                                 <div> 
