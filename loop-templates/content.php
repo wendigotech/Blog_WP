@@ -15,7 +15,7 @@
                 <?php
                     if ( has_post_thumbnail() ) {
                         the_post_thumbnail( 'large', array(
-                        'class' => 'mb-4 shadow'
+                        'class' => 'mb-4'
                     ) );
                     }
                  ?> 

@@ -19,7 +19,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- End Google Tag Manager -->
         <?php wp_head(); ?>
     </head>     
-    <body style="margin-top: 30px;" class="<?php echo implode(' ', get_body_class()); ?>">
+    <body class="<?php echo implode(' ', get_body_class()); ?>">
         <!-- Google Tag Manager (noscript) -->
         <noscript>
             <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-526CT5W" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -29,7 +29,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <header> 
                 <div itemscope="" itemtype="http://schema.org/WebSite" id="wrapper-navbar"> 
                     <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'blog' ); ?></a> 
-                    <nav class="navbar-expand-lg border-top-0 border-right-0 border-left-0 border border-dark navbar-light navbar fixed-top" style="border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; background: transparent;"> 
+                    <nav class="navbar-expand-lg border-top-0 border-right-0 border-left-0 border border-dark navbar-light navbar bg-light" style="border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; margin-bottom: -20px;"> 
                         <div class="container"> 
                             <?php if ( ! has_custom_logo() ) : ?>
                                 <div> 
@@ -45,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <?php if ( has_nav_menu( 'primary' ) ) : ?>
                                     <?php wp_nav_menu( array(
                                             'menu' => 'primary',
-                                            'menu_class' => 'navbar-nav mt-2 mt-lg-0 ml-auto',
+                                            'menu_class' => 'navbar-nav mt-2 mt-lg-0 ml-auto d-inline-flex float-right text-center',
                                             'container' => '',
                                             'depth' => '2',
                                             'fallback_cb' => 'wp_bootstrap4_navwalker::fallback',
