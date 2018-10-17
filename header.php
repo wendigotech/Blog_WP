@@ -29,7 +29,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <header> 
                 <div itemscope="" itemtype="http://schema.org/WebSite" id="wrapper-navbar"> 
                     <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'blog' ); ?></a> 
-                    <nav class="navbar navbar-expand-lg navbar-light bg-white"> 
+                    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border border-dark border-top-0 border-right-0 border-left-0" style="border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;"> 
                         <div class="container"> 
                             <?php if ( ! has_custom_logo() ) : ?>
                                 <div> 
@@ -45,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <?php if ( has_nav_menu( 'primary' ) ) : ?>
                                     <?php wp_nav_menu( array(
                                             'menu' => 'primary',
-                                            'menu_class' => 'navbar-nav mt-2 mt-lg-0 ml-auto ',
+                                            'menu_class' => 'navbar-nav mt-2 mt-lg-0 ml-auto bg-white shadow-sm',
                                             'container' => '',
                                             'depth' => '2',
                                             'fallback_cb' => 'wp_bootstrap4_navwalker::fallback',

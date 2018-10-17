@@ -21,7 +21,4 @@
         </div>         
         <!-- .nav-links -->         
     </nav>     
-    <?php if ( comments_open() || get_comments_number() || is_single() ) : ?>
-        <?php comments_template( '/comments.php' ); ?>
-    <?php endif; ?> 
 </div>
