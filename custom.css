@@ -7,6 +7,7 @@
 .nav-item {
     font-size: 1em;
     font-family: Roboto;
+    transition: all 500ms ease-in;
 }
 
 div#card-inner:hover {
@@ -481,4 +482,14 @@ section.cards-grid {
         display: block;
         padding: 30px;
     }
+}
+
+ul.navbar-nav {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
 }
