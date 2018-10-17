@@ -2,7 +2,7 @@
 get_header(); ?>
 
 <div class="wrapper" id="index-wrapper"> 
-    <div id="content" tabindex="-1" class="container mt-5 pt-5"> 
+    <div id="content" tabindex="-1" class="container" style="margin-top: 175px;"> 
         <div class="row"> 
             <?php if ( get_theme_mod( 'show_left_sidebar' ) ) : ?>
                 <div class="col-md-4 widget-area" role="complementary" id="left-sidebar"> 
