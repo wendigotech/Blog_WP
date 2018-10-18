@@ -10,7 +10,8 @@
                             <h3 class="text-center"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h3>
                         <?php endif; ?> 
                         <div class="entry-meta"> 
-                            <p class="text-center"><?php _e( 'Posted on', 'blog' ); ?> <span><?php the_modified_date(); ?></span> <?php _e( 'by', 'blog' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p> 
+                            <p class="text-center"><span><?php the_modified_date(); ?></p>
+                            <p class="text-center"><?php _e( 'March 18, 2018 by', 'blog' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p> 
                         </div>                         
                     </header>                     
                     <figure class="snip1573 float-right">
