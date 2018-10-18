@@ -4,6 +4,10 @@ figure,
 #secondary img {
     margin-bottom: 10px;
     border-radius: 10px;
+    -webkit-box-shadow: 3px 2px 13px;
+    box-shadow: 3px 2px 13px;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
 .wp-caption-text {
