@@ -519,8 +519,6 @@ article {
 }
 
 .snip1573 {
-    background-color: #2997d4;
-    mix-blend-mode: hue;
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -571,7 +569,6 @@ article {
     backface-visibility: hidden;
     max-width: 100%;
     vertical-align: top;
-    max-height: 210px;
 }
 
 .snip1573 figcaption {
