@@ -571,6 +571,7 @@ article {
     backface-visibility: hidden;
     max-width: 100%;
     vertical-align: top;
+    max-height: 200px;
 }
 
 .snip1573 figcaption {

@@ -20,7 +20,7 @@
                             }
                          ?>
                         <figcaption>
-                            <h3><i class="fas fa-eye fa-3x fa-rotate-180"></i><i class="fas fa-eye fa-3x fa-rotate-180"></i><?php _e( 'More', 'blog' ); ?></h3>
+                            <h3><i class="fas fa-eye fa-3x fa-rotate-180"></i><?php _e( 'More', 'blog' ); ?></h3>
                         </figcaption>
                         <a href="<?php echo esc_url( get_permalink() ); ?>"></a>
                     </figure>                     
