@@ -322,7 +322,7 @@ p {
 .card__author {
     font-weight: 600;
     text-decoration: none;
-    color: #AD7D52;
+    color: #2997d4;
 }
 
 .card:hover .card__img--hover {
@@ -492,7 +492,7 @@ ul.navbar-nav {
 }
 
 .nav-item:hover {
-    background-color: rgba(0, 0, 0, 0.12);
+    background-color: rgba(41, 151, 212, 0.36);
     border-radius: 10px;
 }
 
@@ -519,7 +519,8 @@ article {
 }
 
 .snip1573 {
-    background-color: #000;
+    background-color: #2997d4;
+    mix-blend-mode: hue;
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -570,6 +571,7 @@ article {
     backface-visibility: hidden;
     max-width: 100%;
     vertical-align: top;
+    max-height: 210px;
 }
 
 .snip1573 figcaption {
@@ -639,4 +641,12 @@ article {
 .entry-content .btn-secondary {
     margin-left: 15px;
     margin-bottom: 3px;
+}
+
+#index-wrapper.wrapper {
+    padding-top: 99px;
+}
+
+.portfolio-body {
+    padding-top: 99px;
 }

@@ -2,23 +2,21 @@
     <?php if ( have_posts() ) : ?>
         <div <?php post_class( 'row' ); ?> id="post-<?php the_ID(); ?>">
             <?php while ( have_posts() ) : the_post(); ?>
-                <article class="mb-5 col-md-6"> 
+                <article class="mb-5 col-md-6 align-items-center d-inline-flex flex-column"> 
                     <header class="entry-header"> 
                         <?php if ( is_singular() ) : ?>
-                            <h3 class="pl-4 pt-1"><?php the_title(); ?></h3>
+                            <h3 class="text-center"><?php the_title(); ?></h3>
                         <?php else : ?>
-                            <h3 class="pl-4 pt-1"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h3>
+                            <h3 class="text-center"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h3>
                         <?php endif; ?> 
                         <div class="entry-meta"> 
-                            <p><?php _e( 'Posted on', 'blog' ); ?> <span><?php the_modified_date(); ?></span> <?php _e( 'by', 'blog' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p> 
+                            <p class="text-center"><?php _e( 'Posted on', 'blog' ); ?> <span><?php the_modified_date(); ?></span> <?php _e( 'by', 'blog' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p> 
                         </div>                         
                     </header>                     
-                    <figure class="snip1573">
+                    <figure class="snip1573 float-right">
                         <?php
                             if ( has_post_thumbnail() ) {
-                                the_post_thumbnail( 'large', array(
-                                'class' => 'mb-4'
-                            ) );
+                                the_post_thumbnail( 'large' );
                             }
                          ?>
                         <figcaption>
