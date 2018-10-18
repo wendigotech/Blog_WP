@@ -2,7 +2,7 @@
     <?php if ( have_posts() ) : ?>
         <div <?php post_class( 'row' ); ?> id="post-<?php the_ID(); ?>">
             <?php while ( have_posts() ) : the_post(); ?>
-                <article class="mb-5 align-items-center d-inline-flex flex-column col-md-5"> 
+                <article class="align-items-center d-inline-flex flex-column col-md-5 "> 
                     <header class="entry-header"> 
                         <?php if ( is_singular() ) : ?>
                             <h3 class="text-center"><?php the_title(); ?></h3>

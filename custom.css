@@ -514,9 +514,10 @@ ul.navbar-nav {
 
 article {
     border-radius: 17px;
-    border: 1px solid rgba(0, 0, 0, 0.27);
     margin-left: 20px;
     margin-right: 20px;
+    border: 0px solid rgba(0, 0, 0, 0.27);
+    box-shadow: 1px 3px 10px;
 }
 
 .snip1573 {
@@ -654,4 +655,9 @@ article {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     margin-top: -25px;
+}
+
+article:hover {
+    transform: translate(-5px, -5px);
+    transition: transform 400ms;
 }
