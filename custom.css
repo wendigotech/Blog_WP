@@ -351,7 +351,7 @@ section.cards-grid {
     margin-top: 10px;
     width: 100%;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .blog-item a {
@@ -646,4 +646,10 @@ article {
 
 .portfolio-body {
     padding-top: 99px;
+}
+
+#wrapper-footer {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -10px;
 }
