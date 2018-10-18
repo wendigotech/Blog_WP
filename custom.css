@@ -299,7 +299,7 @@ p {
 .card__category {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 2px;
     font-weight: 500;
     color: #868686;
@@ -494,5 +494,16 @@ ul.navbar-nav {
     border-radius: 10px;
 }
 
-body {
+.scroll-top {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 25px;
+    left: 20px;
+    display: none;
+}
+
+.scroll-top i {
+    display: inline-block;
+    color: #fff;
 }

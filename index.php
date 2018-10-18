@@ -2,7 +2,7 @@
 get_header(); ?>
 
 <div class="wrapper" id="index-wrapper"> 
-    <div id="content" tabindex="-1" class="container "> 
+    <div id="content" tabindex="-1" class="container thetop"> 
         <div class="row"> 
             <?php if ( get_theme_mod( 'show_left_sidebar' ) ) : ?>
                 <div class="col-md-4 widget-area" role="complementary" id="left-sidebar"> 
@@ -25,6 +25,9 @@ get_header(); ?>
             <?php endif; ?> 
         </div>                         
     </div>                     
-</div>                                 
+</div>                 
+<button class="btn btn-primary scroll-top" data-scroll="up" type="button">
+    <i class="fa fa-chevron-up"></i>
+</button>                
 
 <?php get_footer(); ?>
