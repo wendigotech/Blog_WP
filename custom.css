@@ -655,8 +655,3 @@ article {
     border-top-right-radius: 30px;
     margin-top: -25px;
 }
-
-a:focus {
-    background: linear-gradient(90deg, #ffe259, #ffa751);
-    transition: all 1s ease-in;
-}
