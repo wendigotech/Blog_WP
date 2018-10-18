@@ -1,4 +1,4 @@
- 
+<div> 
     <?php if ( have_posts() ) : ?>
         <div <?php post_class( 'row' ); ?> id="post-<?php the_ID(); ?>">
             <?php while ( have_posts() ) : the_post(); ?>
@@ -39,3 +39,4 @@
     <nav aria-label="Posts navigation"> 
         <?php posts_nav_link( null, __( '&#xAB; Newer Posts', 'blog' ), __( 'Older Posts &#xBB;', 'blog' ) ); ?> 
     </nav>     
+</div>
