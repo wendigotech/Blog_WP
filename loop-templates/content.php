@@ -1,8 +1,8 @@
  
-    <div class="row">
-        <?php if ( have_posts() ) : ?>
+    <?php if ( have_posts() ) : ?>
+        <div <?php post_class( 'row' ); ?> id="post-<?php the_ID(); ?>">
             <?php while ( have_posts() ) : the_post(); ?>
-                <article <?php post_class( 'mb-5 col-md-6' ); ?> id="post-<?php the_ID(); ?>"> 
+                <article class="mb-5 col-md-6"> 
                     <header class="entry-header"> 
                         <?php if ( is_singular() ) : ?>
                             <h3 class="pl-4 pt-1"><?php the_title(); ?></h3>
@@ -33,10 +33,10 @@
                     <footer class="entry-footer"></footer>                     
                 </article>
             <?php endwhile; ?>
-        <?php else : ?>
-            <p><?php _e( 'Sorry, no posts matched your criteria.', 'blog' ); ?></p>
-        <?php endif; ?>
-    </div>     
+        </div>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.', 'blog' ); ?></p>
+    <?php endif; ?> 
     <nav aria-label="Posts navigation"> 
         <?php posts_nav_link( null, __( '&#xAB; Newer Posts', 'blog' ), __( 'Older Posts &#xBB;', 'blog' ) ); ?> 
     </nav>     
