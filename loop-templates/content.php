@@ -5,9 +5,9 @@
                 <article <?php post_class( 'mb-5 col-md-6' ); ?> id="post-<?php the_ID(); ?>"> 
                     <header class="entry-header"> 
                         <?php if ( is_singular() ) : ?>
-                            <h2 class="pl-4 pt-1"><?php the_title(); ?></h2>
+                            <h3 class="pl-4 pt-1"><?php the_title(); ?></h3>
                         <?php else : ?>
-                            <h2 class="pl-4 pt-1"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h2>
+                            <h3 class="pl-4 pt-1"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h3>
                         <?php endif; ?> 
                         <div class="entry-meta"> 
                             <p><?php _e( 'Posted on', 'blog' ); ?> <span><?php the_modified_date(); ?></span> <?php _e( 'by', 'blog' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p> 
