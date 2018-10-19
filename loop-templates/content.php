@@ -1,6 +1,44 @@
 <div class="d-flex flex-column align-items-center justify-content-center"> 
     <?php if ( have_posts() ) : ?>
         <div <?php post_class( 'row flex-row-reverse justify-content-center' ); ?> id="post-<?php the_ID(); ?>">
+            <div id="carousel1" class="carousel slide" data-ride="carousel"> 
+                <ol class="carousel-indicators"> 
+                    <li data-target="#carousel1" data-slide-to="0" class="active"></li>                     
+
+                    <li data-target="#carousel1" data-slide-to="1"></li>                     
+
+                    <li data-target="#carousel1" data-slide-to="2"></li>                     
+                </ol>                 
+
+                <div class="carousel-inner"> 
+                    <div class="carousel-item active"> 
+                        <img class="d-block w-100" src="http://pinegrow.com/placeholders/img16.jpg" alt="First slide"> 
+                        <div class="carousel-caption d-none d-md-block"> 
+                            <h3><?php _e( 'Slide label 1', 'blog' ); ?></h3> 
+                            <p><?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'blog' ); ?></p> 
+                        </div>                         
+                    </div>                     
+
+                    <div class="carousel-item"> 
+                        <img class="d-block w-100" src="http://pinegrow.com/placeholders/img13.jpg" alt="Second slide"> 
+                        <div class="carousel-caption d-none d-md-block"> 
+                            <h3><?php _e( 'Slide label 2', 'blog' ); ?></h3> 
+                            <p><?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'blog' ); ?></p> 
+                        </div>                         
+                    </div>                     
+
+                    <div class="carousel-item"> 
+                        <img class="d-block w-100" src="http://pinegrow.com/placeholders/img18.jpg" alt="Third slide"> 
+                        <div class="carousel-caption d-none d-md-block"> 
+                            <h3><?php _e( 'Slide label 3', 'blog' ); ?></h3> 
+                            <p><?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'blog' ); ?></p> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+
+                <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only"><?php _e( 'Previous', 'blog' ); ?></span> </a> 
+                <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only"><?php _e( 'Next', 'blog' ); ?></span> </a> 
+            </div>
             <?php while ( have_posts() ) : the_post(); ?>
                 <article class="col-md-5"> 
                     <header class="entry-header"> 
