@@ -20,9 +20,8 @@
                         </ol>                         
 
                         <div class="carousel-inner"> 
-                            <?php $Top_item_number = 0; ?>
                             <?php while ( $Top->have_posts() ) : $Top->the_post(); ?>
-                                <div class="carousel-item<?php if( $Top_item_number == 0) echo ' active'; ?>"> 
+                                <div class="carousel-item active"> 
                                     <?php
                                         if ( has_post_thumbnail() ) {
                                             the_post_thumbnail( 'normal', array(
@@ -35,9 +34,23 @@
                                         <?php the_excerpt( ); ?> 
                                     </div>                                     
                                 </div>
-                                <?php $Top_item_number++; ?>
                             <?php endwhile; ?>
-                            <?php wp_reset_postdata(); ?>                                                           
+                            <?php wp_reset_postdata(); ?> 
+                            <div class="carousel-item"> 
+                                <img class="d-block w-100" src="http://pinegrow.com/placeholders/img13.jpg" alt="Second slide"> 
+                                <div class="carousel-caption d-none d-md-block"> 
+                                    <h3><?php _e( 'Slide label 2', 'blog' ); ?></h3> 
+                                    <p><?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'blog' ); ?></p> 
+                                </div>                                 
+                            </div>                             
+
+                            <div class="carousel-item"> 
+                                <img class="w-100 d-block" src="http://pinegrow.com/placeholders/img18.jpg" alt="Third slide"> 
+                                <div class="carousel-caption d-none d-md-block"> 
+                                    <h3><?php _e( 'Slide label 3', 'blog' ); ?></h3> 
+                                    <p><?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'blog' ); ?></p> 
+                                </div>                                 
+                            </div>                             
                         </div>                         
 
                         <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only"><?php _e( 'Previous', 'blog' ); ?></span> </a> 
