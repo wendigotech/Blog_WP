@@ -20,8 +20,9 @@
                         </ol>                         
 
                         <div class="carousel-inner"> 
+                            <?php $Top_item_number = 0; ?>
                             <?php while ( $Top->have_posts() ) : $Top->the_post(); ?>
-                                <div class="carousel-item active"> 
+                                <div class="carousel-item<?php if( $Top_item_number == 0) echo ' active'; ?>"> 
                                     <?php
                                         if ( has_post_thumbnail() ) {
                                             the_post_thumbnail( 'normal', array(
@@ -34,6 +35,7 @@
                                         <?php the_excerpt( ); ?> 
                                     </div>                                     
                                 </div>
+                                <?php $Top_item_number++; ?>
                             <?php endwhile; ?>
                             <?php wp_reset_postdata(); ?>                                                           
                         </div>                         
