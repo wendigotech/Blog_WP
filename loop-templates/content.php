@@ -1,8 +1,8 @@
-<div> 
+<div class="d-flex flex-column align-items-center justify-content-center"> 
     <?php if ( have_posts() ) : ?>
-        <div <?php post_class( 'row' ); ?> id="post-<?php the_ID(); ?>">
+        <div <?php post_class( 'row no-gutters d-flex flex-row-reverse justify-content-center' ); ?> id="post-<?php the_ID(); ?>">
             <?php while ( have_posts() ) : the_post(); ?>
-                <article class="align-items-center d-inline-flex flex-column col-md-5 "> 
+                <article class="col-md-12"> 
                     <header class="entry-header"> 
                         <?php if ( is_singular() ) : ?>
                             <h3 class="text-center"><?php the_title(); ?></h3>
@@ -11,7 +11,7 @@
                         <?php endif; ?> 
                         <div class="entry-meta"> 
                             <p class="text-center"><span><?php the_modified_date(); ?></p>
-                            <p class="text-center"><?php _e( 'March 18, 2018 by', 'blog' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p> 
+                            <p class="text-center"><?php _e( '&nbsp;by', 'blog' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p> 
                         </div>                         
                     </header>                     
                     <figure class="snip1573 float-right">

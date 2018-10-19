@@ -514,10 +514,10 @@ ul.navbar-nav {
 
 article {
     border-radius: 17px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border: 0px solid rgba(0, 0, 0, 0.27);
     box-shadow: 1px 3px 10px;
+    border-color: rgba(0, 0, 0, 0.27);
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .snip1573 {
@@ -570,7 +570,6 @@ article {
 .snip1573 img {
     backface-visibility: hidden;
     max-width: 100%;
-    vertical-align: top;
     max-height: 220px;
 }
 
@@ -660,4 +659,11 @@ article {
 article:hover {
     transform: translate(-5px, -5px);
     transition: transform 400ms;
+    box-shadow: 4px 4px 22px;
+}
+
+.entry-header {
+    display: flex;
+    align-content: center;
+    flex-direction: column-reverse;
 }
