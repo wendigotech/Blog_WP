@@ -667,3 +667,7 @@ article:hover {
     align-content: center;
     flex-direction: column-reverse;
 }
+
+#right-sidebar.widget-area {
+    background: linear-gradient(90deg, #9796f0, #fbc7d4);
+}
