@@ -8,14 +8,14 @@ get_header(); ?>
                 <main class="site-main" id="main"> 
                     <?php get_template_part( 'loop-templates/content' ); ?> 
                 </main>                                 
-            </div>                             
+            </div>                                                          
             <?php if ( get_theme_mod( 'show_right_sidebar' ) ) : ?>
                 <div class="widget-area col-md-2" role="complementary" id="right-sidebar"> 
                     <?php if ( is_active_sidebar( 'right-sidebar' ) ) : ?>
                         <?php dynamic_sidebar( 'right-sidebar' ); ?>
                     <?php endif; ?>                                                                           
                 </div>
-            <?php endif; ?> 
+            <?php endif; ?>
         </div>                         
     </div>                     
 </div>                 

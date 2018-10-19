@@ -521,16 +521,16 @@ article {
 }
 
 .snip1573 {
-    display: inline-block;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    margin: 10px 7px;
     max-width: 315px;
     min-width: 230px;
-    overflow: hidden;
     position: relative;
     text-align: center;
     width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .snip1573 * {
@@ -643,7 +643,6 @@ article {
 }
 
 #index-wrapper.wrapper {
-    padding-top: 99px;
 }
 
 .portfolio-body {
@@ -670,4 +669,5 @@ article:hover {
 
 #right-sidebar.widget-area {
     background: linear-gradient(90deg, #9796f0, #fbc7d4);
+    top: -30px;
 }
