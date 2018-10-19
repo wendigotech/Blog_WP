@@ -8969,6 +8969,7 @@ button.close {
     position: relative;
     width: 100%;
     overflow: hidden;
+    border-radius: 25px;
 }
 
 .carousel-item {
@@ -9941,6 +9942,7 @@ button.bg-dark:focus {
 .align-content-center {
     -ms-flex-line-pack: center !important;
     align-content: center !important;
+    margin-top: -10px;
 }
 
 .align-content-between {
@@ -10132,6 +10134,7 @@ button.bg-dark:focus {
     .align-content-sm-center {
         -ms-flex-line-pack: center !important;
         align-content: center !important;
+        margin-top: -10px;
     }
 
     .align-content-sm-between {
@@ -10324,6 +10327,7 @@ button.bg-dark:focus {
     .align-content-md-center {
         -ms-flex-line-pack: center !important;
         align-content: center !important;
+        margin-top: -10px;
     }
 
     .align-content-md-between {
@@ -10516,6 +10520,7 @@ button.bg-dark:focus {
     .align-content-lg-center {
         -ms-flex-line-pack: center !important;
         align-content: center !important;
+        margin-top: -10px;
     }
 
     .align-content-lg-between {
@@ -10708,6 +10713,7 @@ button.bg-dark:focus {
     .align-content-xl-center {
         -ms-flex-line-pack: center !important;
         align-content: center !important;
+        margin-top: -10px;
     }
 
     .align-content-xl-between {

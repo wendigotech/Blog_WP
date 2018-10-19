@@ -517,7 +517,7 @@ article {
     box-shadow: 1px 3px 10px;
     border-color: rgba(0, 0, 0, 0.27);
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .snip1573 {
@@ -669,5 +669,12 @@ article:hover {
 
 #right-sidebar.widget-area {
     background: linear-gradient(90deg, #9796f0, #fbc7d4);
-    top: -20px;
+}
+
+.carousel-caption {
+    background: linear-gradient(90deg, rgba(151, 150, 240, 0.76) 0%, rgba(251, 199, 212, 0.51) 100%);
+    border-radius: 25px;
+}
+
+.carousel-item img {
 }
