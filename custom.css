@@ -643,6 +643,7 @@ article {
 }
 
 #index-wrapper.wrapper {
+    background: linear-gradient(90deg, #ECE9E6, #FFFFFF);
 }
 
 .portfolio-body {
