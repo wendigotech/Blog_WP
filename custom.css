@@ -200,6 +200,7 @@ p {
     font-variant: small-caps;
     padding-left: 15px;
     padding-right: 15px;
+    word-break: normal;
 }
 
 .cards {
@@ -678,6 +679,8 @@ article:hover {
 }
 
 .carousel-item img {
+    filter: blur(1px);
+    max-height: 280px;
 }
 
 @font-face {
@@ -699,4 +702,7 @@ article:hover {
 }
 
 > button.navbar-toggler {
+}
+
+.jumbotron-2 .col-md-4 {
 }

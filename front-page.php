@@ -1,11 +1,13 @@
 <?php
 get_header(); ?>
 
-<div class="jumbotron jumbotron-2"> 
-    <div class="row"></div>                                                                                                         
-
+<div class="jumbotron jumbotron-2">                      
     <div class="row">
-        <h1 class="display-3 col-lg-4"><?php _e( 'Hello, world!', 'blog' ); ?><p class="lead"><?php _e( 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'blog' ); ?></p></h1>
+        <div class="col-md-4 bg-light">                              
+
+            <h1 class="display-4"><?php _e( 'Hello, world!', 'blog' ); ?></h1>
+            <p class="lead"><?php _e( 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'blog' ); ?></p>
+        </div>
         <?php
             $Top_args = array(
                 'tag' => 'top',
@@ -14,7 +16,7 @@ get_header(); ?>
         ?>
         <?php $Top = new WP_Query( $Top_args ); ?>
         <?php if ( $Top->have_posts() ) : ?>
-            <div id="carousel1" class="carousel slide col-lg-8" data-ride="carousel"> 
+            <div id="carousel1" class="carousel slide carousel-fade col-lg-8" data-ride="carousel" data-pause="hover"> 
                 <ol class="carousel-indicators"> 
                     <li data-target="#carousel1" data-slide-to="0" class="active"></li>                                     
                     <li data-target="#carousel1" data-slide-to="1"></li>                                     
@@ -26,7 +28,7 @@ get_header(); ?>
                         <div class="carousel-item<?php if( $Top_item_number == 0) echo ' active'; ?>"> 
                             <a href="<?php echo esc_url( get_permalink() ); ?>"> <?php the_post_thumbnail( 'normal', array(
                                         'class' => 'd-block w-100'
-                                ) ); ?></a> 
+                                ) ); ?> </a> 
                             <div class="carousel-caption d-none d-md-block"> 
                                 <h2><?php the_title(); ?></h2> 
                                 <?php the_excerpt( ); ?> 
