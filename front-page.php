@@ -7,7 +7,7 @@ get_header(); ?>
 
             <h1 class="display-4"><?php _e( 'Hello, world!', 'blog' ); ?></h1>
         </div>
-        <p class="lead col-lg-2"><?php _e( 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'blog' ); ?></p>
+        <p class="lead col-lg-2 bg-light"><?php _e( 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'blog' ); ?></p>
         <?php
             $Top_args = array(
                 'tag' => 'top',
