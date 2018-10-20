@@ -680,7 +680,7 @@ article:hover {
 
 .carousel-item img {
     filter: blur(1px);
-    max-height: 280px;
+    max-height: 300px;
 }
 
 @font-face {

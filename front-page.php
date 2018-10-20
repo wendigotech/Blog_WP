@@ -9,7 +9,7 @@ get_header(); ?>
         </div>
         <div class="col-md-3">                              
 
-            <p class="lead"><?php _e( 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'blog' ); ?></p>
+            <p class="lead bg-dark text-light"><?php _e( 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'blog' ); ?></p>
         </div>
         <?php
             $Top_args = array(
