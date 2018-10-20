@@ -672,9 +672,9 @@ article:hover {
 }
 
 #right-sidebar.widget-area {
-    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    background: linear-gradient(90deg, #E0EAFC, #CFDEF3);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .carousel-caption {
