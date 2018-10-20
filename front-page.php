@@ -3,11 +3,11 @@ get_header(); ?>
 
 <div class="jumbotron jumbotron-2">                      
     <div class="row d-flex align-items-start justify-content-center flex-row flex-wrap">
-        <div class="d-flex justify-content-center align-items-end flex-column col-md-5 col-lg-3">                              
+        <div class="d-flex justify-content-center align-items-end flex-column col-md-5 col-lg-2">                              
 
             <h1 class="display-4 bg-light"><?php _e( 'Hello, world!', 'blog' ); ?></h1>
         </div>
-        <div class="col-md-5 col-lg-3">                              
+        <div class="col-md-5 col-lg-5">                              
 
             <p class="lead bg-dark text-light"><?php _e( 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'blog' ); ?></p>
         </div>
@@ -19,7 +19,7 @@ get_header(); ?>
         ?>
         <?php $Top = new WP_Query( $Top_args ); ?>
         <?php if ( $Top->have_posts() ) : ?>
-            <div id="carousel1" class="carousel slide carousel-fade col-sm-12 col-md-10 col-lg-6" data-ride="carousel" data-pause="hover"> 
+            <div id="carousel1" class="carousel slide carousel-fade col-sm-12 col-md-10 col-lg-8" data-ride="carousel" data-pause="hover"> 
                 <ol class="carousel-indicators"> 
                     <li data-target="#carousel1" data-slide-to="0" class="active"></li>                                     
                     <li data-target="#carousel1" data-slide-to="1"></li>                                     

@@ -8,6 +8,7 @@
     font-size: 1em;
     font-family: Alaskaregular;
     transition: all 500ms ease-in;
+    font-weight: 800;
 }
 
 div#card-inner:hover {
@@ -518,6 +519,8 @@ article {
     border-color: rgba(0, 0, 0, 0.27);
     margin-left: 20px;
     margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .snip1573 {
