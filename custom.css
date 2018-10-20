@@ -141,12 +141,12 @@ div.card-body .btn {
 }
 
 h1 {
-    font-family: Roboto Slab;
+    font-family: alaskaregular;
     font-size: 2.814697265625em;
     line-height: 2rem;
-    font-weight: 700;
     font-style: normal;
     letter-spacing: 0em;
+    font-weight: 600;
 }
 
 h2 {
@@ -668,7 +668,7 @@ article:hover {
 }
 
 #right-sidebar.widget-area {
-    background: linear-gradient(90deg, #9796f0, #fbc7d4);
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
 }
 
 .carousel-caption {
@@ -677,4 +677,12 @@ article:hover {
 }
 
 .carousel-item img {
+}
+
+@font-face {
+    font-family: 'alaskaregular';
+    src: url('fonts/alaska_font-webfont.woff2') format('woff2'),
+         url('fonts/alaska_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
