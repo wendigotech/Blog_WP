@@ -10,7 +10,7 @@
                             <h3 class="text-center"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h3>
                         <?php endif; ?> 
                     </header>
-                    <figure class="snip1573 float-right">
+                    <figure class="snip1573">
                         <?php
                             if ( has_post_thumbnail() ) {
                                 the_post_thumbnail( 'large' );

@@ -24,15 +24,11 @@ get_header(); ?>
                     <?php $Top_item_number = 0; ?>
                     <?php while ( $Top->have_posts() ) : $Top->the_post(); ?>
                         <div class="carousel-item<?php if( $Top_item_number == 0) echo ' active'; ?>"> 
-                            <?php
-                                if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail( 'normal', array(
-                                    'class' => 'd-block w-100'
-                                ) );
-                                }
-                             ?> 
+                            <a href="<?php echo esc_url( get_permalink() ); ?>"> <?php the_post_thumbnail( 'normal', array(
+                                        'class' => 'd-block w-100'
+                                ) ); ?></a> 
                             <div class="carousel-caption d-none d-md-block"> 
-                                <h3><?php the_title(); ?></h3> 
+                                <h2><?php the_title(); ?></h2> 
                                 <?php the_excerpt( ); ?> 
                             </div>                                             
                         </div>

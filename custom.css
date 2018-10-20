@@ -142,7 +142,7 @@ div.card-body .btn {
 
 h1 {
     font-family: alaskaregular;
-    font-size: 2.814697265625em;
+    font-size: 2em;
     line-height: 2rem;
     font-style: normal;
     letter-spacing: 0em;
@@ -150,9 +150,9 @@ h1 {
 }
 
 h2 {
-    font-family: Roboto Slab;
-    font-size: 2em;
-    line-height: 2rem;
+    font-family: Alaskaregular;
+    font-size: 1.8em;
+    line-height: 1.5rem;
     font-weight: 700;
     font-style: normal;
 }
@@ -160,10 +160,9 @@ h2 {
 h3 {
     font-family: alaskaregular;
     font-size: 1.44140625em;
-    line-height: 2rem;
-    font-weight: 700;
+    line-height: 1.4rem;
+    font-weight: 600;
     font-style: normal;
-    letter-spacing: 0em;
 }
 
 h4 {
@@ -486,7 +485,7 @@ section.cards-grid {
 }
 
 ul.navbar-nav {
-    border-radius: 10px;
+    border-radius: 6px;
     background-color: #ffffff;
 }
 
@@ -524,7 +523,7 @@ article {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     max-width: 315px;
-    min-width: 230px;
+    min-width: 200px;
     position: relative;
     text-align: center;
     width: 100%;
@@ -690,11 +689,14 @@ article:hover {
 }
 
 .jumbotron-2 {
-    background: linear-gradient(90deg, #5433FF, #20BDFF, #A5FECB);
+    background: linear-gradient(90deg, #ECE9E6, #FFFFFF);
     border-radius: 25px;
 }
 
 .jumbotron-2 h1.display-3.col-lg-4 {
     background: linear-gradient(90deg, #ECE9E6, #FFFFFF);
     border-radius: 25px;
+}
+
+> button.navbar-toggler {
 }
