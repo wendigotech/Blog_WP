@@ -2,7 +2,7 @@
 get_header(); ?>
 
 <div class="jumbotron jumbotron-2">                      
-    <div class="row d-flex justify-content-center align-items-start">
+    <div class="row d-flex align-items-start justify-content-center flex-row flex-wrap">
         <div class="d-flex justify-content-center align-items-end flex-column col-md-5 col-lg-3">                              
 
             <h1 class="display-4 bg-light"><?php _e( 'Hello, world!', 'blog' ); ?></h1>

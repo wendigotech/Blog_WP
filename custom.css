@@ -6,7 +6,7 @@
 
 .nav-item {
     font-size: 1em;
-    font-family: Roboto;
+    font-family: Alaskaregular;
     transition: all 500ms ease-in;
 }
 
@@ -680,7 +680,7 @@ article:hover {
 }
 
 .carousel-item img {
-    filter: blur(1px);
+    filter: brightness(0.5);
     max-height: 300px;
 }
 
