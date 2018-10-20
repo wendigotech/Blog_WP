@@ -713,3 +713,15 @@ article:hover {
 .jumbotron-2 h1 {
     writing-mode: sideways-lr;
 }
+
+p.lead {
+    font-family: alaskaregular;
+}
+
+.jumbotron-2 .col-md-3 {
+    border-radius: 6px;
+}
+
+.jumbotron-2 .col-md-2 {
+    border-radius: -4px;
+}
