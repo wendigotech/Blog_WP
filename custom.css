@@ -705,4 +705,10 @@ article:hover {
 }
 
 .jumbotron-2 .col-md-4 {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.jumbotron-2 h1 {
+    writing-mode: sideways-lr;
 }

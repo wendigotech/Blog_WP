@@ -3,11 +3,11 @@ get_header(); ?>
 
 <div class="jumbotron jumbotron-2">                      
     <div class="row">
-        <div class="col-md-4 bg-light">                              
+        <div class="bg-light col-md-2">                              
 
             <h1 class="display-4"><?php _e( 'Hello, world!', 'blog' ); ?></h1>
-            <p class="lead"><?php _e( 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'blog' ); ?></p>
         </div>
+        <p class="lead col-lg-2"><?php _e( 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'blog' ); ?></p>
         <?php
             $Top_args = array(
                 'tag' => 'top',
