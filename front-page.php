@@ -3,10 +3,10 @@ get_header(); ?>
 
 <div class="jumbotron jumbotron-2 jumbotron-fluid"> 
     <div class="row d-flex flex-wrap no-gutters justify-content-center align-items-start align-content-center">
-        <div class="d-flex justify-content-center align-items-end flex-column col-lg-2 col-md-2 col-sm-2"> 
+        <div class="d-flex justify-content-center align-items-end flex-column col-lg-2 col-md-2 col-sm-2 col-2"> 
             <h1 class="display-5"><?php _e( 'Hello, world!', 'blog' ); ?></h1>
         </div>
-        <div class="col-lg-10 col-md-10 col-sm-10"> 
+        <div class="col-lg-10 col-md-10 col-sm-10 col-10"> 
             <p class="lead bg-dark text-light"><?php _e( 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'blog' ); ?></p>
             <?php
                 $Top_args = array(
@@ -16,12 +16,12 @@ get_header(); ?>
             ?>
             <?php $Top = new WP_Query( $Top_args ); ?>
             <?php if ( $Top->have_posts() ) : ?>
-                <div id="carousel1" class="carousel slide carousel-fade col-sm-12 col-md-10 col-lg-12" data-ride="carousel" data-pause="hover"> 
+                <div id="carousel1" class="carousel slide carousel-fade col-sm-12 col-md-10 col-lg-12 col bg-light" data-ride="carousel" data-pause="hover">                                      
                     <ol class="carousel-indicators"> 
                         <li data-target="#carousel1" data-slide-to="0" class="active"></li>                                         
                         <li data-target="#carousel1" data-slide-to="1"></li>                                         
                         <li data-target="#carousel1" data-slide-to="2"></li>                                         
-                    </ol>                                     
+                    </ol>
                     <div class="carousel-inner"> 
                         <?php $Top_item_number = 0; ?>
                         <?php while ( $Top->have_posts() ) : $Top->the_post(); ?>
@@ -29,7 +29,7 @@ get_header(); ?>
                                 <a href="<?php echo esc_url( get_permalink() ); ?>"> <?php the_post_thumbnail( 'normal', array(
                                             'class' => 'd-block w-100'
                                     ) ); ?> </a> 
-                                <div class="carousel-caption"> 
+                                <div class="carousel-caption text-truncate"> 
                                     <h3><?php the_title(); ?></h3> 
                                     <?php the_excerpt( ); ?> 
                                 </div>                                                 
