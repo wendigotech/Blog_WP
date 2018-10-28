@@ -6,7 +6,7 @@
 
 .nav-item {
     font-size: 1em;
-    font-family: Alaskaregular;
+    font-family: Ubuntu;
     transition: all 500ms ease-in;
     font-weight: 800;
 }
@@ -194,8 +194,8 @@ h6 {
 }
 
 p {
-    font-family: Roboto;
-    font-size: 1em;
+    font-family: Ubuntu Condensed;
+    font-size: 1.2em;
     font-weight: 600;
     font-style: normal;
     font-variant: small-caps;
@@ -489,10 +489,13 @@ section.cards-grid {
 ul.navbar-nav {
     border-radius: 6px;
     background-color: #ffffff;
+    background: -webkit-radial-gradient(right center, rgb(236, 233, 230) 0%, rgb(255, 255, 255) 100%);
+    box-shadow: 1px 0px 5px #fffbfb;
+    text-shadow: 1px 0px 5px #7c7c7c;
 }
 
 .nav-item:hover {
-    background-color: rgba(41, 151, 212, 0.36);
+    background-color: #c9d6ff;
     border-radius: 10px;
 }
 
@@ -503,6 +506,7 @@ ul.navbar-nav {
     bottom: 25px;
     right: 20px;
     display: none;
+    border-radius: 12px;
 }
 
 .scroll-top i {
@@ -521,6 +525,7 @@ article {
     margin-top: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background: linear-gradient(90deg, #ECE9E6, #FFFFFF);
 }
 
 .snip1573 {
@@ -643,10 +648,13 @@ article {
 .entry-content .btn-secondary {
     margin-left: 15px;
     margin-bottom: 3px;
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+    border-radius: 10px;
 }
 
 #index-wrapper.wrapper {
     background: linear-gradient(90deg, #ECE9E6, #FFFFFF);
+    filter: brightness(1.1);
 }
 
 .portfolio-body {
@@ -654,9 +662,11 @@ article {
 }
 
 #wrapper-footer {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    margin-top: -25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: linear-gradient(90deg, #536976, #292E49);
+    box-shadow: 2px -2px 5px #343e55;
+    text-shadow: 1px -1px 5px #aebcc3;
 }
 
 article:hover {
@@ -671,10 +681,19 @@ article:hover {
     flex-direction: column-reverse;
 }
 
-#right-sidebar.widget-area {
-    background: linear-gradient(90deg, #E0EAFC, #CFDEF3);
+#right-sidebar.widget-area:hover {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    background: linear-gradient(90deg, rgb(201, 214, 255) 22.619%, rgb(226, 226, 226) 85.119%);
+    transform: skew(0deg);
+}
+
+#right-sidebar.widget-area {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: linear-gradient(90deg, rgb(201, 214, 255) 22.619%, rgb(226, 226, 226) 85.119%);
+    transform: skew(-2deg);
+    transition: all 1000ms;
 }
 
 .carousel-caption {
@@ -696,7 +715,7 @@ article:hover {
 }
 
 .jumbotron-2 {
-    background: linear-gradient(90deg, #ECE9E6, #FFFFFF);
+    background-image: url('assets/trianglify.svg');
 }
 
 .jumbotron-2 h1.display-3.col-lg-4 {
@@ -717,7 +736,7 @@ article:hover {
 }
 
 p.lead {
-    font-family: alaskaregular;
+    font-family: Ubuntu Condensed;
 }
 
 .jumbotron-2 .col-md-3 {
@@ -726,4 +745,8 @@ p.lead {
 
 .jumbotron-2 .col-md-2 {
     border-radius: -4px;
+}
+
+span a {
+    font-family: Ubuntu;
 }

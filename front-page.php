@@ -1,14 +1,12 @@
 <?php
 get_header(); ?>
 
-<div class="jumbotron jumbotron-2">                      
+<div class="jumbotron jumbotron-2"> 
     <div class="row d-flex flex-wrap no-gutters justify-content-center align-items-start align-content-center">
-        <div class="d-flex justify-content-center align-items-end flex-column col-md-5 col-lg-2">                              
-
+        <div class="d-flex justify-content-center align-items-end flex-column col-md-5 col-lg-2"> 
             <h1 class="display-4 bg-light"><?php _e( 'Hello, world!', 'blog' ); ?></h1>
         </div>
-        <div class="col-md-5 col-lg-6">                              
-
+        <div class="col-md-5 col-lg-6"> 
             <p class="lead bg-dark text-light"><?php _e( 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'blog' ); ?></p>
             <?php
                 $Top_args = array(
