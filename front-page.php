@@ -1,13 +1,13 @@
 <?php
 get_header(); ?>
 
-<div class="jumbotron jumbotron-2 jumbotron-fluid"> 
+<div class="jumbotron jumbotron-2 circles jumbotron-fluid"> 
     <div class="row flex-wrap justify-content-center align-items-start align-content-center no-gutters">
         <div class="d-flex justify-content-center align-items-end flex-column col-lg-2 col-md-2 col-sm-2 col-2"> 
-            <h1 class="display-5"><?php _e( 'Hello, world!', 'blog' ); ?></h1>
+            <h1 class="display-5"><?php _e( 'Hello, Welcomeworld!', 'blog' ); ?></h1>
         </div>
-        <div class="col-md-10 col-sm-10 col-10 col-lg-10 circles"> 
-            <p class="lead bg-dark text-light"><?php _e( 'Site descritption', 'blog' ); ?></p>
+        <div class="col-md-10 col-sm-10 col-10 col-lg-10"> 
+            <p class="text-light lead bg-dark"><?php _e( 'Welcome to my site. Have a look at my portfolio, blog posts &amp; curated content.', 'blog' ); ?></p>
             <?php
                 $Top_args = array(
                     'tag' => 'top',
@@ -16,10 +16,14 @@ get_header(); ?>
             ?>
             <?php $Top = new WP_Query( $Top_args ); ?>
             <?php if ( $Top->have_posts() ) : ?>
-                <div id="carousel1" class="carousel slide carousel-fade col-sm-12 col-md-10 col col-lg-11" data-ride="carousel" data-pause="hover">                                      
+                <div id="carousel1" class="carousel slide carousel-fade col-sm-12 col-md-10 col col-lg-11" data-ride="carousel" data-pause="hover"> 
                     <ol class="carousel-indicators"> 
                         <li data-target="#carousel1" data-slide-to="0" class="active"></li>                                         
                         <li data-target="#carousel1" data-slide-to="1"></li>                                         
+                        <li data-target="#carousel1" data-slide-to="2"></li>
+                        <li data-target="#carousel1" data-slide-to="2"></li>
+                        <li data-target="#carousel1" data-slide-to="2"></li>
+                        <li data-target="#carousel1" data-slide-to="2"></li>
                         <li data-target="#carousel1" data-slide-to="2"></li>                                         
                     </ol>
                     <div class="carousel-inner"> 

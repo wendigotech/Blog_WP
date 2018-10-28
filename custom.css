@@ -521,9 +521,9 @@ article {
     border-radius: 17px;
     box-shadow: 1px 3px 10px;
     border-color: rgba(0, 0, 0, 0.27);
-    margin-left: 20px;
-    margin-top: 20px;
-    padding-top: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-top: 20px;
     padding-bottom: 10px;
     background: linear-gradient(90deg, #E0EAFC, #CFDEF3);
 }
@@ -617,6 +617,7 @@ article {
 .snip1573:hover > img,
 .snip1573.hover > img {
     opacity: 0.5;
+    background-color: aqua;
 }
 
 .snip1573:hover:before,
@@ -650,6 +651,7 @@ article {
     margin-bottom: 3px;
     background: linear-gradient(90deg, #757F9A, #D7DDE8);
     border-radius: 10px;
+    box-shadow: 2px 2px 3px #837e7e;
 }
 
 #index-wrapper.wrapper {
@@ -669,7 +671,7 @@ article {
 
 article:hover {
     transform: translate(-5px, -5px);
-    transition: transform 400ms;
+    transition: transform 800ms;
     box-shadow: 4px 4px 22px;
 }
 
@@ -692,6 +694,7 @@ article:hover {
     background: linear-gradient(90deg, rgb(201, 214, 255) 22.619%, rgb(226, 226, 226) 85.119%);
     transform: skew(-2deg);
     transition: all 1000ms;
+    box-shadow: -1px -1px 6px;
 }
 
 .carousel-caption {
@@ -735,6 +738,7 @@ article:hover {
 
 p.lead {
     font-family: Ubuntu Condensed;
+    box-shadow: inset -11px 8px 17px #979191;
 }
 
 .jumbotron-2 .col-md-3 {
@@ -856,4 +860,12 @@ span a {
         opacity: 0;
         border-radius: 50%;
     }
+}
+
+h1.display-5 {
+    text-shadow: 1px 1px 4px;
+}
+
+.carousel-inner {
+    box-shadow: 1px 1px 3px;
 }
