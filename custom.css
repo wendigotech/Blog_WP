@@ -523,11 +523,12 @@ article {
     box-shadow: inset 1px 3px 10px #fafafa;
     border-color: rgba(0, 0, 0, 0.27);
     margin-top: 30px;
-    background: linear-gradient(90deg, rgb(242, 242, 242) 33%, rgb(234, 234, 234) 100%);
+    background: linear-gradient(90deg, rgba(242, 242, 242, 0.15) 33%, rgba(234, 234, 234, 0.26) 100%);
     padding-top: 20px;
     padding-bottom: 10px;
     margin-left: 30px;
     margin-right: 30px;
+    transition: all 1s;
 }
 
 .snip1573 {
@@ -651,7 +652,7 @@ article {
 .entry-content .btn-secondary {
     margin-left: 15px;
     margin-bottom: 3px;
-    background: linear-gradient(90deg, #757F9A, #D7DDE8);
+    background: linear-gradient(90deg, rgba(0, 210, 255, 0.74) 0%, rgba(58, 123, 213, 0.61) 100%);
     border-radius: 10px;
     box-shadow: 2px 2px 3px #837e7e;
 }
@@ -675,7 +676,7 @@ article {
 
 article:hover {
     transform: translate(-5px, -5px);
-    transition: transform 500ms;
+    transition: transform 1s cubic-bezier(0.00, 0.00, 0.40, 0.65);
     box-shadow: 4px 4px 22px;
 }
 
@@ -688,14 +689,14 @@ article:hover {
 #right-sidebar.widget-area:hover {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background: linear-gradient(90deg, rgb(201, 214, 255) 22.619%, rgb(226, 226, 226) 85.119%);
+    background: linear-gradient(90deg, rgba(0, 210, 255, 0.74) 0%, rgba(58, 123, 213, 0.61) 100%);
     transform: skew(0deg);
 }
 
 #right-sidebar.widget-area {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    background: linear-gradient(90deg, rgb(201, 214, 255) 22.619%, rgb(226, 226, 226) 85.119%);
+    background: linear-gradient(90deg, rgba(0, 210, 255, 0.74) 0%, rgba(58, 123, 213, 0.61) 100%);
     transform: skew(-1deg);
     transition: all 1000ms;
     box-shadow: inset -1px -1px 42px #ffffff;
@@ -877,7 +878,8 @@ span a {
 
 h1.display-5 {
     text-shadow: 1px 1px 4px;
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
 }
 
 .carousel-inner {
