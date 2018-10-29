@@ -3,10 +3,8 @@ get_header(); ?>
 
 <div class="jumbotron jumbotron-2 circles jumbotron-fluid"> 
     <div class="row flex-wrap justify-content-center align-items-start align-content-center no-gutters">
-        <div class="d-flex justify-content-center align-items-end flex-column col-md-2 col-sm-2 col-2 col-lg-6"> 
+        <div class="d-flex justify-content-center align-items-end flex-column col-lg-6 col-md-6 col-sm-6 col-12"> 
             <h2 class="display-5"><?php _e( 'Welcome @ Wendigo', 'blog' ); ?></h2>
-        </div>
-        <div class="col-md-10 col-sm-10 col-10 col-lg-8"> 
             <p class="text-light lead"><?php _e( 'My personal design and development collection. Usefull tutorials, software tests, personal work.', 'blog' ); ?></p>
         </div>
     </div>
