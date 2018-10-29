@@ -8969,7 +8969,7 @@ button.close {
     position: relative;
     width: 100%;
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: 8px;
 }
 
 .carousel-item {

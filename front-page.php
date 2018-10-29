@@ -4,10 +4,10 @@ get_header(); ?>
 <div class="jumbotron jumbotron-2 circles jumbotron-fluid"> 
     <div class="row flex-wrap justify-content-center align-items-start align-content-center no-gutters">
         <div class="d-flex justify-content-center align-items-end flex-column col-lg-2 col-md-2 col-sm-2 col-2"> 
-            <h1 class="display-5"><?php _e( 'Hello, Welcomeworld!', 'blog' ); ?></h1>
+            <h1 class="display-5"><?php _e( 'Welcome @ Wendigo', 'blog' ); ?></h1>
         </div>
         <div class="col-md-10 col-sm-10 col-10 col-lg-10"> 
-            <p class="text-light lead bg-dark"><?php _e( 'Welcome to my site. Have a look at my portfolio, blog posts &amp; curated content.', 'blog' ); ?></p>
+            <p class="text-light lead"><?php _e( 'Have a look at my portfolio, blog posts &amp; curated content&nbsp;', 'blog' ); ?></p>
             <?php
                 $Top_args = array(
                     'tag' => 'top',
@@ -60,7 +60,7 @@ get_header(); ?>
                 </main>                                 
             </div>
             <?php if ( get_theme_mod( 'show_right_sidebar' ) ) : ?>
-                <div class="widget-area col-md-3" role="complementary" id="right-sidebar"> 
+                <div class="widget-area col-md-3 glow" role="complementary" id="right-sidebar"> 
                     <?php if ( is_active_sidebar( 'right-sidebar' ) ) : ?>
                         <?php dynamic_sidebar( 'right-sidebar' ); ?>
                     <?php endif; ?>                                                                           
