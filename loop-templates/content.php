@@ -1,8 +1,8 @@
 <div class="d-flex flex-column align-items-center justify-content-center"> 
     <?php if ( have_posts() ) : ?>
-        <div style="margin-top: -80px; background: linear-gradient(90deg, #ECE9E6, #FFFFFF); border-top-left-radius: 10px; border-top-right-radius: 10px; box-shadow: 1px -2px 11px #ece8e8; padding-bottom: 80px;" <?php post_class( 'row flex-row-reverse justify-content-center' ); ?> id="post-<?php the_ID(); ?>">
+        <div <?php post_class( 'row flex-row-reverse justify-content-center site-main' ); ?> id="post-<?php the_ID(); ?>">
             <?php while ( have_posts() ) : the_post(); ?>
-                <article class="flex-column flex-wrap-reverse align-items-center d-flex col-md-4"> 
+                <article class="flex-wrap-reverse align-items-center d-flex col-md-4 flex-column"> 
                     <figure class="snip1573">
                         <?php
                             if ( has_post_thumbnail() ) {
@@ -24,7 +24,7 @@
                         </header>
                         <?php the_excerpt( ); ?>
                         <div class="entry-meta justify-content-between align-items-center"> 
-                            <p class="text-center"><?php _e( '&nbsp;by', 'blog' ); ?> <span><span><?php the_modified_date(); ?></span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p>
+                            <p class="text-center"><?php _e( '&nbsp;by', 'blog' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a><span><?php the_modified_date(); ?></span></span></p>
                             <a class="btn btn-secondary mt-2" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'blog' ); ?></a> 
                         </div>                         
                     </div>                     
