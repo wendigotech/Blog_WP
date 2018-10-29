@@ -721,9 +721,11 @@ article:hover {
 
 .jumbotron-2 {
     background-image: url('assets/trianglify.svg');
+    padding-bottom: 10em;
     box-shadow: inset 1px -2px 3px #e8e0e0;
-    margin-bottom: 1em;
-    padding-top: 8em;
+    padding-top: 10em;
+    margin-top: -6em;
+    margin-bottom: -1em;
 }
 
 .jumbotron-2 h1.display-3.col-lg-4 {
@@ -893,4 +895,5 @@ h1.display-5 {
 
 nav.navbar-expand-lg {
     z-index: 4;
+    top: 1em;
 }
