@@ -5,7 +5,7 @@ get_header(); ?>
     <div class="row flex-wrap justify-content-center align-items-start align-content-center no-gutters">
         <div class="d-flex justify-content-center align-items-end flex-column col-lg-6 col-md-6 col-sm-6 col-12"> 
             <h2 class="display-5"><?php _e( 'Welcome @ Wendigo', 'blog' ); ?></h2>
-            <p class="text-light lead"><?php _e( 'My personal design and development collection. Usefull tutorials, software tests, personal work.', 'blog' ); ?></p>
+            <p class="text-light lead"><?php _e( 'My personal design and development collection. Usefull tutorials, software tests, experiments.', 'blog' ); ?></p>
         </div>
     </div>
     <ul> 

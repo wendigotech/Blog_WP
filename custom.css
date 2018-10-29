@@ -700,6 +700,7 @@ article:hover {
     transform: skew(-1deg);
     transition: all 1000ms;
     box-shadow: inset -1px -1px 42px #ffffff;
+    margin-top: -28px;
 }
 
 .carousel-caption {
