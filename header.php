@@ -27,9 +27,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- End Google Tag Manager (noscript) -->
         <div class="hfeed site" id="page"> 
             <header> 
-                <div itemscope="" itemtype="http://schema.org/WebSite" id="wrapper-navbar" style="background: linear-gradient(90deg, #ECE9E6, #FFFFFF);"> 
+                <div itemscope="" itemtype="http://schema.org/WebSite" id="wrapper-navbar"> 
                     <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'blog' ); ?></a> 
-                    <nav class="navbar-expand-lg border-dark navbar-light navbar" style="border-bottom-left-radius: 15px; background: linear-gradient(to right, rgb(224, 234, 252) 0%, rgb(207, 222, 243) 100%); border-bottom-right-radius: 15px; box-shadow: 0px 1px 10px #a3a3a3;"> 
+                    <nav class="navbar-expand-lg border-dark navbar-light navbar"> 
                         <div class="container"> 
                             <?php if ( ! has_custom_logo() ) : ?>
                                 <div> 
