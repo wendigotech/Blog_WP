@@ -890,3 +890,19 @@ h1.display-5 {
     box-shadow: 1px -2px 11px #ece8e8;
     padding-bottom: 80px;
 }
+
+div#wrapper-navbar {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(90deg, #E0EAFC, #CFDEF3);
+    box-shadow: 1px 2px 10px #171717;
+    z-index: 1;
+}
+
+nav {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(90deg, #E0EAFC, #CFDEF3);
+    box-shadow: 1px 2px 10px #171717;
+    z-index: 1;
+}
