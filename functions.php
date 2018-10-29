@@ -345,6 +345,9 @@ if ( ! function_exists( 'st2_enqueue_scripts' ) ) :
     wp_deregister_style( 'style-7' );
     wp_enqueue_style( 'style-7', 'https://fonts.googleapis.com/css?family=Ubuntu+Mono', false, null, 'all');
 
+    wp_deregister_style( 'animate' );
+    wp_enqueue_style( 'animate', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css', false, null, 'all');
+
     /* Pinegrow generated Enqueue Styles End */
 
     }
