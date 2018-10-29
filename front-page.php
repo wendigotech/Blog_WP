@@ -18,13 +18,13 @@ get_header(); ?>
             <?php if ( $Top->have_posts() ) : ?>
                 <div id="carousel1" class="carousel slide carousel-fade col-sm-12 col-md-10 col col-lg-11" data-ride="carousel" data-pause="hover"> 
                     <ol class="carousel-indicators"> 
-                        <li data-target="#carousel1" data-slide-to="0" class="active"></li>                                         
-                        <li data-target="#carousel1" data-slide-to="1"></li>                                         
-                        <li data-target="#carousel1" data-slide-to="2"></li>
-                        <li data-target="#carousel1" data-slide-to="2"></li>
-                        <li data-target="#carousel1" data-slide-to="2"></li>
-                        <li data-target="#carousel1" data-slide-to="2"></li>
-                        <li data-target="#carousel1" data-slide-to="2"></li>                                         
+                        <li class="active"></li>                                         
+                        <li></li>                                         
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>                                         
                     </ol>
                     <div class="carousel-inner"> 
                         <?php $Top_item_number = 0; ?>
