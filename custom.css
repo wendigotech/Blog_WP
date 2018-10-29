@@ -721,10 +721,9 @@ article:hover {
 
 .jumbotron-2 {
     background-image: url('assets/trianglify.svg');
-    padding-bottom: 100px;
     box-shadow: inset 1px -2px 3px #e8e0e0;
-    padding-top: 116px;
-    margin-top: -61px;
+    margin-bottom: 1em;
+    padding-top: 8em;
 }
 
 .jumbotron-2 h1.display-3.col-lg-4 {
@@ -876,6 +875,7 @@ span a {
 
 h1.display-5 {
     text-shadow: 1px 1px 4px;
+    writing-mode: sideways-lr;
 }
 
 .carousel-inner {
