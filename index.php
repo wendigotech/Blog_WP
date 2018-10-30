@@ -25,9 +25,6 @@ get_header(); ?>
             <?php endif; ?> 
         </div>                         
     </div>                     
-</div>                 
-<button class="btn btn-primary scroll-top" data-scroll="up" type="button">
-    <i class="fa fa-chevron-up"></i>
-</button>                
+</div>                                 
 
 <?php get_footer(); ?>

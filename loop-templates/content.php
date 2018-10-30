@@ -22,6 +22,7 @@
                                 <h3 class="text-center"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h3>
                             <?php endif; ?> 
                         </header>
+                        <hr/>
                         <?php the_excerpt( ); ?>
                         <hr/>
                         <div class="entry-meta justify-content-between align-items-center"> 

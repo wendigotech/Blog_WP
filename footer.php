@@ -12,6 +12,9 @@
                 </div>
             <?php endif; ?> 
             <div class="wrapper bg-dark text-light" id="wrapper-footer"> 
+                <button class="btn btn-primary scroll-top" data-scroll="up" type="button">
+                    <i class="fa fa-chevron-up"></i>
+                </button>
                 <div class="container"> 
                     <div class="row"> 
                         <div class="col-md-6"> 
