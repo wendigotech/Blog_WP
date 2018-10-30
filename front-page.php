@@ -6,7 +6,7 @@ get_header(); ?>
         <div class="d-flex justify-content-center align-items-end flex-column col-lg-2 col-md-2 col-sm-2 col-2"> 
             <h1 class="display-5 text-light"><?php _e( 'Welcome @ Wendigo', 'blog' ); ?></h1>
         </div>
-        <div class="col-md-10 col-sm-10 col-10 col-lg-10"> 
+        <div class="col-md-10 col-sm-10 col-10 col-lg-10 d-flex flex-column-reverse"> 
             <p class="lead"><?php _e( 'Have a look at my portfolio, blog posts &amp; curated content&nbsp;', 'blog' ); ?></p>
             <?php
                 $Top_args = array(
