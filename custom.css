@@ -9,6 +9,8 @@
     font-family: Ubuntu;
     transition: all 500ms ease-in;
     font-weight: 800;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 div#card-inner:hover {
@@ -202,7 +204,6 @@ p {
     padding-left: 15px;
     padding-right: 15px;
     word-break: normal;
-    text-shadow: 0px 1px 3px;
 }
 
 .cards {
@@ -593,8 +594,8 @@ article {
     -webkit-transform: translate(-50%, -50%) scale(0.5);
     transform: translate(-50%, -50%) scale(0.5);
     opacity: 0;
-    -webkit-box-shadow: 0 0 10px #000000;
-    box-shadow: 0 0 10px #000000;
+    -webkit-box-shadow: 0 0 10px #48d8fb;
+    box-shadow: 0 0 10px #4ed4f9;
 }
 
 .snip1573 h3 {
@@ -646,17 +647,17 @@ article {
 .entry-content .btn-secondary:hover {
     margin-left: 15px;
     margin-bottom: 3px;
-    background: linear-gradient(90deg, #232526, #414345);
     box-shadow: 1px 1px 5px #0b0b0b;
+    transition: all 500ms ease-in;
 }
 
 .entry-content .btn-secondary {
-    margin-left: 15px;
-    margin-bottom: 3px;
     background: linear-gradient(90deg, rgba(0, 210, 255, 0.74) 0%, rgba(58, 123, 213, 0.61) 100%);
     border-radius: 10px;
-    box-shadow: 2px 2px 3px #252323;
+    box-shadow: inset 0px 3px 10px 6px #faf8f8;
     font-family: Ubuntu;
+    transition: all 600ms ease;
+    border-top-style: solid;
 }
 
 #index-wrapper.wrapper {
@@ -729,7 +730,7 @@ article:hover {
     box-shadow: inset 1px -2px 3px #e8e0e0;
     padding-top: 20em;
     margin-top: -16em;
-    margin-bottom: -2em;
+    margin-bottom: -1em;
 }
 
 .jumbotron-2 h1.display-3.col-lg-4 {
