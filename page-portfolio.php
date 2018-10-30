@@ -9,8 +9,7 @@ get_header(); ?>
 <div id="page-wrapper" class="wrapper portfolio-body color-change-2x"> 
     <div class="container" id="content" tabindex="-1"> 
         <div class="row text-light">
-            <div class="col-md-12">
-                <h2 class="text-center text-light display-3"><?php the_title(); ?></h2> 
+            <div class="col-md-12"> 
                 <?php the_content(); ?> 
             </div>
         </div>                         

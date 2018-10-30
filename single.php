@@ -1,21 +1,58 @@
 <?php
 get_header(); ?>
 
-<div class="wrapper" id="single-wrapper"> 
-    <div class="container" id="content" tabindex="-1"> 
-        <div class="row"> 
-            <?php if ( get_theme_mod( 'show_left_sidebar' ) ) : ?>
-                <div class="col-md-4 widget-area" role="complementary" id="left-sidebar"> 
-                    <?php if ( is_active_sidebar( 'left-sidebar' ) ) : ?>
-                        <?php dynamic_sidebar( 'left-sidebar' ); ?>
-                    <?php endif; ?>                                                                           
-                </div>
-            <?php endif; ?> 
+<div class="jumbotron jumbotron-2 circles jumbotron-fluid"> 
+    <?php
+        if ( has_post_thumbnail() ) {
+            the_post_thumbnail( 'normal', array(
+            'class' => 'w-100 img-thumbnail'
+        ) );
+        }
+     ?>
+    <ul> 
+        <li></li>                         
+        <li></li>                         
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>                         
+    </ul>
+    <div class="col-md-3"> 
+        <a href="#">  </a> 
+    </div>
+</div>
+<div class="wrapper" id="index-wrapper"> 
+    <div id="content" tabindex="-1" class="container thetop"> 
+        <div class="row d-flex flex-row align-content-center"> 
             <div class="content-area col-md-9" id="primary"> 
-                <main class="site-main" id="main"> 
-                    <?php get_template_part( 'loop-templates/content-single' ); ?> 
+                <main id="main"> 
+                    <div class="d-flex flex-column align-items-center justify-content-center"> 
+                        <?php
+                            $blog_args = array(
+                                'category_name' => 'blog',
+                                'order' => 'DESC'
+                            )
+                        ?>
+                        <?php $blog = new WP_Query( $blog_args ); ?>
+                        <?php if ( $blog->have_posts() ) : ?>
+                            <?php while ( $blog->have_posts() ) : $blog->the_post(); ?>
+                                <div <?php post_class( 'row flex-row-reverse justify-content-center site-main' ); ?> id="post-<?php the_ID(); ?>">
+                                    <div class="col-md-12">
+                                        <h3><?php the_title(); ?></h3> 
+                                        <?php the_content(); ?> 
+                                    </div>
+                                </div>
+                            <?php endwhile; ?>
+                            <?php wp_reset_postdata(); ?>
+                        <?php else : ?>
+                            <p><?php _e( 'Sorry, no posts matched your criteria.', 'blog' ); ?></p>
+                        <?php endif; ?> 
+                        <nav aria-label="Posts navigation"> 
+                            <?php posts_nav_link( null, __( '&#xAB; Newer Posts', 'blog' ), __( 'Older Posts &#xBB;', 'blog' ) ); ?> 
+                        </nav>                                         
+                    </div>                                     
                 </main>                                 
-            </div>                             
+            </div>
             <?php if ( get_theme_mod( 'show_right_sidebar' ) ) : ?>
                 <div class="widget-area col-md-3" role="complementary" id="right-sidebar"> 
                     <?php if ( is_active_sidebar( 'right-sidebar' ) ) : ?>
@@ -25,6 +62,9 @@ get_header(); ?>
             <?php endif; ?> 
         </div>                         
     </div>                     
-</div>                                 
+</div>                 
+<button class="btn btn-primary scroll-top" data-scroll="up" type="button">
+    <i class="fa fa-chevron-up"></i>
+</button>                
 
 <?php get_footer(); ?>
