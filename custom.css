@@ -156,6 +156,7 @@ h2 {
     line-height: 1.5rem;
     font-weight: 700;
     font-style: normal;
+    text-shadow: 2px 2px 5px #fafafa;
 }
 
 h3 {
@@ -201,6 +202,7 @@ p {
     padding-left: 15px;
     padding-right: 15px;
     word-break: normal;
+    text-shadow: 0px 1px 3px;
 }
 
 .cards {
@@ -662,10 +664,10 @@ article {
 }
 
 .portfolio-body {
-    padding-top: 132px;
-    margin-top: -80px;
-    margin-bottom: -30px;
-    padding-bottom: 30px;
+    padding-top: 15em;
+    margin-top: -15em;
+    margin-bottom: -3em;
+    padding-bottom: 5em;
 }
 
 #wrapper-footer {
@@ -710,7 +712,7 @@ article:hover {
 
 .carousel-item img {
     filter: brightness(0.5);
-    max-height: 350px;
+    max-height: 300px;
 }
 
 @font-face {
@@ -725,9 +727,9 @@ article:hover {
     background-image: url('assets/trianglify.svg');
     padding-bottom: 10em;
     box-shadow: inset 1px -2px 3px #e8e0e0;
-    padding-top: 16em;
-    margin-top: -15em;
-    margin-bottom: -1em;
+    padding-top: 20em;
+    margin-top: -16em;
+    margin-bottom: -2em;
 }
 
 .jumbotron-2 h1.display-3.col-lg-4 {
