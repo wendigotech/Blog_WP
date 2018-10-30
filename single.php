@@ -19,15 +19,13 @@ get_header(); ?>
                     <?php while ( have_posts() ) : the_post(); ?>
                         <div <?php post_class( 'd-flex flex-column align-items-center justify-content-center' ); ?> id="post-<?php the_ID(); ?>"> 
                             <div class="row site-main">
-                                <div class="col-md-12 mt-3"> 
-                                    <?php
-                                        if ( has_post_thumbnail() ) {
-                                            the_post_thumbnail( 'normal', array(
-                                            'class' => 'w-100 card-img-top'
-                                        ) );
-                                        }
-                                     ?> 
-                                </div>
+                                <?php
+                                    if ( has_post_thumbnail() ) {
+                                        the_post_thumbnail( 'normal', array(
+                                        'class' => 'w-100 card-img-top'
+                                    ) );
+                                    }
+                                 ?>
                                 <div class="col-md-12 mt-5">
                                     <h2><?php the_title(); ?></h2> 
                                     <?php the_content(); ?> 

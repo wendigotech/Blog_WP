@@ -923,3 +923,8 @@ div.entry-content p {
     overflow: hidden;
     min-height: 50px;
 }
+
+p.single {
+    font-family: Ubuntu Mono;
+    font-size: 1em;
+}
