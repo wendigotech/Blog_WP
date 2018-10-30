@@ -23,13 +23,13 @@ get_header(); ?>
                                     <?php
                                         if ( has_post_thumbnail() ) {
                                             the_post_thumbnail( 'normal', array(
-                                            'class' => 'w-100'
+                                            'class' => 'w-100 card-img-top'
                                         ) );
                                         }
                                      ?> 
                                 </div>
                                 <div class="col-md-12 mt-5">
-                                    <h2 class="display-2"><?php the_title(); ?></h2> 
+                                    <h2><?php the_title(); ?></h2> 
                                     <?php the_content(); ?> 
                                 </div>
                             </div>                                             
@@ -43,7 +43,7 @@ get_header(); ?>
                 <?php endif; ?> 
             </div>
             <?php if ( get_theme_mod( 'show_right_sidebar' ) ) : ?>
-                <div class="widget-area col-md-3 single" role="complementary" id="right-sidebar"> 
+                <div class="widget-area single col-md-3" role="complementary" id="right-sidebar"> 
                     <?php if ( is_active_sidebar( 'right-sidebar' ) ) : ?>
                         <?php dynamic_sidebar( 'right-sidebar' ); ?>
                     <?php endif; ?>                                                                           
