@@ -1,14 +1,16 @@
 <?php
 get_header(); ?>
 
-<div class="jumbotron jumbotron-2 circles jumbotron-fluid"> 
-    <?php
-        if ( has_post_thumbnail() ) {
-            the_post_thumbnail( 'normal', array(
-            'class' => 'w-100 img-thumbnail'
-        ) );
-        }
-     ?>
+<div class="jumbotron jumbotron-2 circles jumbotron-fluid d-flex flex-column justify-content-center align-items-center"> 
+    <div class="col-md-10"> 
+        <?php
+            if ( has_post_thumbnail() ) {
+                the_post_thumbnail( 'normal', array(
+                'class' => 'w-100 img-thumbnail'
+            ) );
+            }
+         ?> 
+    </div>
     <ul> 
         <li></li>                         
         <li></li>                         
@@ -17,9 +19,6 @@ get_header(); ?>
         <li></li>
         <li></li>                         
     </ul>
-    <div class="col-md-3"> 
-        <a href="#">  </a> 
-    </div>
 </div>
 <div class="wrapper" id="index-wrapper"> 
     <div id="content" tabindex="-1" class="container thetop"> 
