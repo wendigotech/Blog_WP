@@ -149,6 +149,7 @@ h2 {
     font-weight: 700;
     font-style: normal;
     text-shadow: 2px 2px 5px #fafafa;
+    text-decoration: underline;
 }
 
 h3 {
@@ -829,7 +830,7 @@ span a {
     left: 35%;
     width: 50px;
     height: 50px;
-    animation-delay: 7s;
+    animation-delay: 5s;
 }
 
 .circles li:nth-child(8) {
@@ -914,6 +915,7 @@ div#right-sidebar-single {
 
 #right-sidebar.single {
     margin-top: 9em;
+    margin-left: 2em;
 }
 
 div.entry-content p {
@@ -927,4 +929,16 @@ div.entry-content p {
 p.single {
     font-family: Ubuntu Mono;
     font-size: 1em;
+    padding-top: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+img.w-100.card-img-top {
+    border-radius: 8px;
+    height: 200px;
+    width: 100%;
+}
+
+.site-main hr {
 }

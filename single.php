@@ -41,7 +41,7 @@ get_header(); ?>
                 <?php endif; ?> 
             </div>
             <?php if ( get_theme_mod( 'show_right_sidebar' ) ) : ?>
-                <div class="widget-area single col-md-3" role="complementary" id="right-sidebar"> 
+                <div class="widget-area single col-md-2" role="complementary" id="right-sidebar"> 
                     <?php if ( is_active_sidebar( 'right-sidebar' ) ) : ?>
                         <?php dynamic_sidebar( 'right-sidebar' ); ?>
                     <?php endif; ?>                                                                           

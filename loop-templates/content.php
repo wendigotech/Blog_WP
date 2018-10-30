@@ -32,6 +32,8 @@
                     </div>                     
                 </article>
             <?php endwhile; ?>
+            <hr/>
+            <hr/>
         </div>
     <?php else : ?>
         <p><?php _e( 'Sorry, no posts matched your criteria.', 'blog' ); ?></p>
