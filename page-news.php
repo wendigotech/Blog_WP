@@ -24,15 +24,15 @@ get_header(); ?>
                 <main id="main"> 
                     <div class="d-flex flex-column align-items-center justify-content-center"> 
                         <?php
-                            $blog_args = array(
-                                'category_name' => 'blog',
+                            $news_args = array(
+                                'category_name' => 'news',
                                 'order' => 'DESC'
                             )
                         ?>
-                        <?php $blog = new WP_Query( $blog_args ); ?>
-                        <?php if ( $blog->have_posts() ) : ?>
+                        <?php $news = new WP_Query( $news_args ); ?>
+                        <?php if ( $news->have_posts() ) : ?>
                             <div <?php post_class( 'row flex-row-reverse justify-content-center site-main' ); ?> id="post-<?php the_ID(); ?>">
-                                <?php while ( $blog->have_posts() ) : $blog->the_post(); ?>
+                                <?php while ( $news->have_posts() ) : $news->the_post(); ?>
                                     <article class="flex-wrap-reverse align-items-center d-flex col-md-4 flex-column"> 
                                         <figure class="snip1573">
                                             <?php

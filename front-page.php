@@ -4,10 +4,10 @@ get_header(); ?>
 <div class="jumbotron jumbotron-2 circles jumbotron-fluid"> 
     <div class="row flex-wrap justify-content-center align-items-start align-content-center no-gutters">
         <div class="d-flex justify-content-center align-items-end flex-column col-lg-2 col-md-2 col-sm-2 col-2"> 
-            <h1 class="display-5"><?php _e( 'Welcome @ Wendigo', 'blog' ); ?></h1>
+            <h1 class="display-5 text-light"><?php _e( 'Welcome @ Wendigo', 'blog' ); ?></h1>
         </div>
         <div class="col-md-10 col-sm-10 col-10 col-lg-10"> 
-            <p class="text-light lead"><?php _e( 'Have a look at my portfolio, blog posts &amp; curated content&nbsp;', 'blog' ); ?></p>
+            <p class="lead"><?php _e( 'Have a look at my portfolio, blog posts &amp; curated content&nbsp;', 'blog' ); ?></p>
             <?php
                 $Top_args = array(
                     'tag' => 'top',
@@ -33,7 +33,7 @@ get_header(); ?>
                                 <a href="<?php echo esc_url( get_permalink() ); ?>"> <?php the_post_thumbnail( 'normal', array(
                                             'class' => 'd-block w-100'
                                     ) ); ?> </a> 
-                                <div class="carousel-caption text-truncate animated bounceInLeft"> 
+                                <div class="carousel-caption text-truncate"> 
                                     <h3 class="animated rollIn"><?php the_title(); ?></h3> 
                                     <?php the_excerpt( ); ?> 
                                 </div>                                                 
@@ -55,12 +55,12 @@ get_header(); ?>
     <div id="content" tabindex="-1" class="container thetop"> 
         <div class="row d-flex flex-row align-content-center"> 
             <div class="content-area col-md-9" id="primary"> 
-                <main class="site-main" id="main"> 
+                <main id="main"> 
                     <?php get_template_part( 'loop-templates/content' ); ?> 
                 </main>                                 
             </div>
             <?php if ( get_theme_mod( 'show_right_sidebar' ) ) : ?>
-                <div class="widget-area col-md-3" role="complementary" id="right-sidebar"> 
+                <div class="widget-area col-md-3 col-sm" role="complementary" id="right-sidebar"> 
                     <?php if ( is_active_sidebar( 'right-sidebar' ) ) : ?>
                         <?php dynamic_sidebar( 'right-sidebar' ); ?>
                     <?php endif; ?>                                                                           

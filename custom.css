@@ -509,7 +509,7 @@ ul.navbar-nav {
     right: 20px;
     display: none;
     border-radius: 12px;
-    box-shadow: 0px 1px 6px #f8efef;
+    box-shadow: 0px 1px 6px #44dcfe;
 }
 
 .scroll-top i {
@@ -754,11 +754,11 @@ article:hover {
 
 p.lead {
     font-family: Ubuntu Condensed;
-    box-shadow: inset -11px 8px 17px #979191;
-    background: linear-gradient(90deg, #485563, #29323c);
     font-weight: 800;
     border-radius: 8px;
     width: 50%;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 64px 8px #ffffff;
 }
 
 .jumbotron-2 .col-md-3 {
@@ -893,7 +893,7 @@ h1.display-5 {
 }
 
 .site-main {
-    margin-top: -40px;
+    margin-top: -4em;
     background: linear-gradient(90deg, #ECE9E6, #ffffff);
     box-shadow: 1px -2px 11px #ece8e8;
     padding-bottom: 80px;

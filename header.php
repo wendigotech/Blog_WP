@@ -39,7 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <?php the_custom_logo(); ?>
                             <?php endif; ?> 
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler6" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
-                                <span class="navbar-toggler-icon"></span> 
+                                <i class="fas fa-bars fa-lg fa-inverse fa-border"></i>
                             </button>                             
                             <div class="collapse navbar-collapse" id="navbarToggler6"> 
                                 <?php if ( has_nav_menu( 'primary' ) ) : ?>
