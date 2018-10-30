@@ -646,9 +646,10 @@ article {
 
 .entry-content .btn-secondary:hover {
     margin-left: 15px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     box-shadow: 1px 1px 5px #0b0b0b;
     transition: all 500ms ease-in;
+    padding: 5px 10px;
 }
 
 .entry-content .btn-secondary {
@@ -657,7 +658,8 @@ article {
     box-shadow: inset 0px 3px 10px 6px #faf8f8;
     font-family: Ubuntu;
     transition: all 600ms ease;
-    border-top-style: solid;
+    margin-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 #index-wrapper.wrapper {
@@ -892,11 +894,10 @@ h1.display-5 {
 
 .site-main {
     margin-top: -40px;
-    background: linear-gradient(90deg, #ECE9E6, #FFFFFF);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background: linear-gradient(90deg, #ECE9E6, #ffffff);
     box-shadow: 1px -2px 11px #ece8e8;
     padding-bottom: 80px;
+    border-radius: 10px;
 }
 
 nav.navbar-expand-lg {
