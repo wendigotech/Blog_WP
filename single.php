@@ -29,7 +29,7 @@ get_header(); ?>
                                      ?> 
                                 </div>
                                 <div class="col-md-12 mt-5">
-                                    <h3><?php the_title(); ?></h3> 
+                                    <h2 class="display-2"><?php the_title(); ?></h2> 
                                     <?php the_content(); ?> 
                                 </div>
                             </div>                                             
