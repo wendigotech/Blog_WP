@@ -522,7 +522,6 @@ ul.navbar-nav {
 
 article {
     border-radius: 35px/20px;
-    border-color: rgba(0, 0, 0, 0.27);
     margin-top: 30px;
     background: linear-gradient(90deg, rgba(242, 242, 242, 0.15) 33%, rgba(234, 234, 234, 0.26) 100%);
     padding-top: 20px;
@@ -530,6 +529,12 @@ article {
     margin-left: 30px;
     margin-right: 30px;
     transition: all 1s;
+    border-bottom-color: rgba(0, 0, 0, 0.27);
+    border-top-style: none;
+    border-top-color: rgba(9, 9, 9, 0.27);
+    border-right-style: none;
+    border-right-color: rgba(0, 0, 0, 0.27);
+    border-left: 1px solid rgba(9, 8, 8, 0.27);
 }
 
 .snip1573 {
@@ -926,4 +931,12 @@ div#right-sidebar-single {
 
 #right-sidebar.single {
     margin-top: 9em;
+}
+
+div.entry-content p {
+    max-height: 50px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    overflow: hidden;
+    min-height: 50px;
 }
