@@ -26,8 +26,8 @@ get_header(); ?>
                                     ) );
                                     }
                                  ?>
-                                <div class="col-md-12 mt-5">
-                                    <h2><?php the_title(); ?></h2> 
+                                <div class="col-md-12 mt-5 text-center">
+                                    <h1 class="pt-3 pb-3 mb-5"><?php the_title(); ?></h1> 
                                     <?php the_content(); ?> 
                                 </div>
                             </div>                                             

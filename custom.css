@@ -695,6 +695,7 @@ article:hover {
     transition: all 1000ms;
     box-shadow: -3px -3px 7px #58cdf4;
     border-radius: 8px;
+    margin-left: 2em;
 }
 
 .carousel-caption {
@@ -938,7 +939,7 @@ p.single {
     font-family: Ubuntu Mono;
     font-size: 1em;
     padding-top: 1em;
-    margin-top: 1em;
+    margin-top: 4em;
     text-align: center;
 }
 
