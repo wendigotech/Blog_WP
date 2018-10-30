@@ -18,7 +18,7 @@ get_header(); ?>
                 <?php if ( have_posts() ) : ?>
                     <?php while ( have_posts() ) : the_post(); ?>
                         <div <?php post_class( 'd-flex flex-column align-items-center justify-content-center' ); ?> id="post-<?php the_ID(); ?>"> 
-                            <div class="row site-main">
+                            <div class="row single-main">
                                 <?php
                                     if ( has_post_thumbnail() ) {
                                         the_post_thumbnail( 'normal', array(
