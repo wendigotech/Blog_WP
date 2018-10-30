@@ -195,10 +195,9 @@ h6 {
 
 p {
     font-family: Ubuntu Condensed;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     font-style: normal;
-    font-variant: small-caps;
     padding-left: 15px;
     padding-right: 15px;
     word-break: normal;
@@ -663,7 +662,10 @@ article {
 }
 
 .portfolio-body {
-    padding-top: 99px;
+    padding-top: 132px;
+    margin-top: -80px;
+    margin-bottom: -30px;
+    padding-bottom: 30px;
 }
 
 #wrapper-footer {
@@ -694,13 +696,11 @@ article:hover {
 }
 
 #right-sidebar.widget-area {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
     background: linear-gradient(90deg, rgba(0, 210, 255, 0.74) 0%, rgba(58, 123, 213, 0.61) 100%);
     transform: skew(-1deg);
     transition: all 1000ms;
-    box-shadow: inset -1px -1px 42px #ffffff;
-    margin-top: -28px;
+    box-shadow: -3px -3px 7px #58cdf4;
+    border-radius: 8px;
 }
 
 .carousel-caption {
@@ -725,8 +725,8 @@ article:hover {
     background-image: url('assets/trianglify.svg');
     padding-bottom: 10em;
     box-shadow: inset 1px -2px 3px #e8e0e0;
-    padding-top: 10em;
-    margin-top: -6em;
+    padding-top: 16em;
+    margin-top: -15em;
     margin-bottom: -1em;
 }
 
@@ -751,9 +751,9 @@ p.lead {
     font-family: Ubuntu Condensed;
     box-shadow: inset -11px 8px 17px #979191;
     background: linear-gradient(90deg, #485563, #29323c);
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
     font-weight: 800;
+    border-radius: 8px;
+    width: 50%;
 }
 
 .jumbotron-2 .col-md-3 {
@@ -898,5 +898,5 @@ h1.display-5 {
 
 nav.navbar-expand-lg {
     z-index: 4;
-    top: 1em;
+    padding-top: 10px;
 }

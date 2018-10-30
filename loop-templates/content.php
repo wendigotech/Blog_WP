@@ -25,7 +25,7 @@
                         <?php the_excerpt( ); ?>
                         <div class="entry-meta justify-content-between align-items-center"> 
                             <p class="text-center"><?php _e( '&nbsp;by', 'blog' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p>
-                            <a class="btn btn-secondary mt-2" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'blog' ); ?></a> 
+                            <a class="btn mt-2 btn-secondary" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'blog' ); ?></a> 
                         </div>                         
                     </div>                     
                 </article>

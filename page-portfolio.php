@@ -10,7 +10,7 @@ get_header(); ?>
     <div class="container" id="content" tabindex="-1"> 
         <div class="row text-light">
             <div class="col-md-12">
-                <h2 class="text-center text-light"><?php the_title(); ?></h2> 
+                <h2 class="text-center text-light display-3"><?php the_title(); ?></h2> 
                 <?php the_content(); ?> 
             </div>
         </div>                         
