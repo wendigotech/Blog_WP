@@ -917,5 +917,13 @@ nav.navbar-expand-lg {
 }
 
 .wrapper-single {
-    margin-top: -132px;
+    margin-top: -10em;
+}
+
+div#right-sidebar-single {
+    padding-top: -;
+}
+
+#right-sidebar.single {
+    margin-top: 9em;
 }
