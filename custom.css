@@ -653,11 +653,11 @@ article {
     margin-bottom: 3px;
     background: linear-gradient(90deg, rgba(0, 210, 255, 0.74) 0%, rgba(58, 123, 213, 0.61) 100%);
     border-radius: 10px;
-    box-shadow: 2px 2px 3px #837e7e;
+    box-shadow: 2px 2px 3px #252323;
+    font-family: Ubuntu;
 }
 
 #index-wrapper.wrapper {
-    background: linear-gradient(90deg, #ECE9E6, #FFFFFF);
     box-shadow: inset 0px -36px 52px #e8e3e3;
 }
 
